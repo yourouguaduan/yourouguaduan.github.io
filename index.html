@@ -180,34 +180,10 @@
       
         <h1 id="一、接线"><a href="#一、接线" class="headerlink" title="一、接线"></a>一、接线</h1><h2 id="1-供电电源"><a href="#1-供电电源" class="headerlink" title="1.供电电源"></a>1.供电电源</h2><p>该stm32f407采用的是12v供电，通过底板的USB母座提供输出，连接电源后按下电源开关，实现供电。</p>
 <h2 id="2-通讯端口"><a href="#2-通讯端口" class="headerlink" title="2.通讯端口"></a>2.通讯端口</h2><p>下位机的通讯口，主板通过micro USB口直接与电脑相连接。（STM32F1/F4核心板上也有micro usb口，该口作为核心板供电用，不是通讯端口，无需接线）</p>
-<h1 id="二、环境搭建与配置"><a href="#二、环境搭建与配置" class="headerlink" title="二、环境搭建与配置"></a>二、环境搭建与配置</h1><h2 id="1-启动ros环境"><a href="#1-启动ros环境" class="headerlink" title="1.启动ros环境"></a>1.启动ros环境</h2><p>#打开新终端<br>roscore</p>
-<h2 id="2-对小车端进行环境配置（没有小车但最好也要进行配置，以免后续出现报错）"><a href="#2-对小车端进行环境配置（没有小车但最好也要进行配置，以免后续出现报错）" class="headerlink" title="2.对小车端进行环境配置（没有小车但最好也要进行配置，以免后续出现报错）"></a>2.对小车端进行环境配置（没有小车但最好也要进行配置，以免后续出现报错）</h2><p>#通过在终端输入如下代码实现环境配置：<br>cd ~/pibot_ros</p>
-<p>#同步最新代码 </p>
-<p>git pull  </p>
-<p>#根据提示输入小车类型，控制板类型，雷达类型，Machine类型(在这一过程中选0)<br>./pibot_init_env.sh<br>source ~/.bashrc<br>cd ~/pibot_ros/ros_ws/</p>
-<p>#编译PIBOT</p>
-<p>catkin_make<br>source ~/.bashrc</p>
-<h2 id="3-对Ubuntu主机进行环境配置"><a href="#3-对Ubuntu主机进行环境配置" class="headerlink" title="3.对Ubuntu主机进行环境配置"></a>3.对Ubuntu主机进行环境配置</h2><p>首先将下载好的pibot_ros.tar.bz2复制至主目录,打开新的终端输入如下代码，完成环境配置。</p>
-<p>#打开新终端</p>
-<p>cd ~<br>tar jxvf pibot_ros.tar.bz2<br>cd ~/pibot_ros</p>
-<p>#这里根据提示输入小车类型，控制板类型，雷达类型，Machine类型(在这一过程中选1), 小车IP(192.168.12.1)<br>./pibot_init_env.sh<br>source ~/.bashrc<br>cd ~/pibot_ros/ros_ws/</p>
-<p>#编译PIBOT</p>
-<p>catkin_make</p>
-<p>source ~/.bashrc</p>
-<h1 id="三、脚本安装"><a href="#三、脚本安装" class="headerlink" title="三、脚本安装"></a>三、脚本安装</h1><p>完成上位机下位机环境配置之后，需要将下载的源码（放置在pibot_ros文件夹里）中的pibot_add_upstart.sh和 pibot_instal_ros.sh在新的终端窗口打开运行。</p>
-<h1 id="四、驱动电机转动"><a href="#四、驱动电机转动" class="headerlink" title="四、驱动电机转动"></a>四、驱动电机转动</h1><h2 id="1-检测硬件是否连接"><a href="#1-检测硬件是否连接" class="headerlink" title="1.检测硬件是否连接"></a>1.检测硬件是否连接</h2><p>在新的终端窗口中输入命令ls /dev/pibot -l，检查主板是否与主机相连接，若连接正常如下图所示。</p>
-<p>![2019-08-18 21-22-04屏幕截图](/home/yourouguaduan/图片/2019-08-18 21-22-04屏幕截图.png)</p>
-<h2 id="2-驱动电机"><a href="#2-驱动电机" class="headerlink" title="2.驱动电机"></a>2.驱动电机</h2><p>#打开新终端</p>
-<p>pibot_bringup</p>
-<p>#打开新终端</p>
-<p>pibot_control</p>
-<p>在pibot_control终端窗口输入i就会发现电机转动</p>
-<p>在无小车的情况下，可通过在新终端输入pibot_simulator实现对小车的仿真模拟。</p>
-<h1 id="五、常见问题"><a href="#五、常见问题" class="headerlink" title="五、常见问题"></a>五、常见问题</h1><h2 id="1-ResourceNotFound"><a href="#1-ResourceNotFound" class="headerlink" title="1.ResourceNotFound"></a>1.ResourceNotFound</h2><p>在终端输入pibot_control命令时有时可能会出现ResourceNotFound：teleop_twist_keyboard的报错，原因在于缺少编译包，需要将pibot_ros文件夹下的两个脚本（pibot_add_upstart.sh和 pibot_instal_ros.sh）安装即可解决。</p>
-<h2 id="2-一切输出正常电机无响应"><a href="#2-一切输出正常电机无响应" class="headerlink" title="2.一切输出正常电机无响应"></a>2.一切输出正常电机无响应</h2><h3 id="2-1-电源问题"><a href="#2-1-电源问题" class="headerlink" title="2.1 电源问题"></a>2.1 电源问题</h3><p>查看电源开关是否闭合，检查电源电压是否达到要求。</p>
-<h3 id="2-2-底层接受出现问题"><a href="#2-2-底层接受出现问题" class="headerlink" title="2.2 底层接受出现问题"></a>2.2 底层接受出现问题</h3><p>检查底层是否能够收到上位机所发出的指令，在电脑上下载cutecom串口通信助手并打开，在终端中输入pibot_bringup命令，如若在cutecom输出窗口中可以正常打印输出结果（如下图所示），则证明底层接受正常，否则需要重新对底层烧制程序。</p>
-<p>![2019-08-18 21-55-25屏幕截图](/home/yourouguaduan/图片/2019-08-18 21-55-25屏幕截图.png)</p>
-
+<h1 id="二、环境搭建与配置"><a href="#二、环境搭建与配置" class="headerlink" title="二、环境搭建与配置"></a>二、环境搭建与配置</h1>
+        
+          <a class="article-more-a" href="/2019/08/18/关于电机启动的步骤以及注意事项/#more">more >></a>
+        
       
 
       

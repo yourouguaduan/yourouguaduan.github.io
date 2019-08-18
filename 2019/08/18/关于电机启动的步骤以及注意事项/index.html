@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://yourouguaduan.github.com/child">
   <title>关于电机启动的步骤以及注意事项 | lin</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="一、接线1.供电电源该stm32f407采用的是12v供电，通过底板的USB母座提供输出，连接电源后按下电源开关，实现供电。 2.通讯端口下位机的通讯口，主板通过micro USB口直接与电脑相连接。（STM32F1/F4核心板上也有micro usb口，该口作为核心板供电用，不是通讯端口，无需接线） 二、环境搭建与配置1.启动ros环境#打开新终端roscore 2.对小车端进行环境配置（没有小">
+  <meta name="description" content="一、接线1.供电电源该stm32f407采用的是12v供电，通过底板的USB母座提供输出，连接电源后按下电源开关，实现供电。 2.通讯端口下位机的通讯口，主板通过micro USB口直接与电脑相连接。（STM32F1/F4核心板上也有micro usb口，该口作为核心板供电用，不是通讯端口，无需接线） 二、环境搭建与配置">
 <meta name="keywords" content="---">
 <meta property="og:type" content="article">
 <meta property="og:title" content="关于电机启动的步骤以及注意事项">
 <meta property="og:url" content="http://yourouguaduan.github.com/child/2019/08/18/关于电机启动的步骤以及注意事项/index.html">
 <meta property="og:site_name" content="lin">
-<meta property="og:description" content="一、接线1.供电电源该stm32f407采用的是12v供电，通过底板的USB母座提供输出，连接电源后按下电源开关，实现供电。 2.通讯端口下位机的通讯口，主板通过micro USB口直接与电脑相连接。（STM32F1/F4核心板上也有micro usb口，该口作为核心板供电用，不是通讯端口，无需接线） 二、环境搭建与配置1.启动ros环境#打开新终端roscore 2.对小车端进行环境配置（没有小">
+<meta property="og:description" content="一、接线1.供电电源该stm32f407采用的是12v供电，通过底板的USB母座提供输出，连接电源后按下电源开关，实现供电。 2.通讯端口下位机的通讯口，主板通过micro USB口直接与电脑相连接。（STM32F1/F4核心板上也有micro usb口，该口作为核心板供电用，不是通讯端口，无需接线） 二、环境搭建与配置">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-08-18T13:59:26.721Z">
+<meta property="og:updated_time" content="2019-08-18T14:03:13.033Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="关于电机启动的步骤以及注意事项">
-<meta name="twitter:description" content="一、接线1.供电电源该stm32f407采用的是12v供电，通过底板的USB母座提供输出，连接电源后按下电源开关，实现供电。 2.通讯端口下位机的通讯口，主板通过micro USB口直接与电脑相连接。（STM32F1/F4核心板上也有micro usb口，该口作为核心板供电用，不是通讯端口，无需接线） 二、环境搭建与配置1.启动ros环境#打开新终端roscore 2.对小车端进行环境配置（没有小">
+<meta name="twitter:description" content="一、接线1.供电电源该stm32f407采用的是12v供电，通过底板的USB母座提供输出，连接电源后按下电源开关，实现供电。 2.通讯端口下位机的通讯口，主板通过micro USB口直接与电脑相连接。（STM32F1/F4核心板上也有micro usb口，该口作为核心板供电用，不是通讯端口，无需接线） 二、环境搭建与配置">
   
     <link rel="alternative" href="/atom.xml" title="lin" type="application/atom+xml">
   
@@ -183,7 +183,9 @@
       
         <h1 id="一、接线"><a href="#一、接线" class="headerlink" title="一、接线"></a>一、接线</h1><h2 id="1-供电电源"><a href="#1-供电电源" class="headerlink" title="1.供电电源"></a>1.供电电源</h2><p>该stm32f407采用的是12v供电，通过底板的USB母座提供输出，连接电源后按下电源开关，实现供电。</p>
 <h2 id="2-通讯端口"><a href="#2-通讯端口" class="headerlink" title="2.通讯端口"></a>2.通讯端口</h2><p>下位机的通讯口，主板通过micro USB口直接与电脑相连接。（STM32F1/F4核心板上也有micro usb口，该口作为核心板供电用，不是通讯端口，无需接线）</p>
-<h1 id="二、环境搭建与配置"><a href="#二、环境搭建与配置" class="headerlink" title="二、环境搭建与配置"></a>二、环境搭建与配置</h1><h2 id="1-启动ros环境"><a href="#1-启动ros环境" class="headerlink" title="1.启动ros环境"></a>1.启动ros环境</h2><p>#打开新终端<br>roscore</p>
+<h1 id="二、环境搭建与配置"><a href="#二、环境搭建与配置" class="headerlink" title="二、环境搭建与配置"></a>二、环境搭建与配置</h1><a id="more"></a>
+
+<h2 id="1-启动ros环境"><a href="#1-启动ros环境" class="headerlink" title="1.启动ros环境"></a>1.启动ros环境</h2><p>#打开新终端<br>roscore</p>
 <h2 id="2-对小车端进行环境配置（没有小车但最好也要进行配置，以免后续出现报错）"><a href="#2-对小车端进行环境配置（没有小车但最好也要进行配置，以免后续出现报错）" class="headerlink" title="2.对小车端进行环境配置（没有小车但最好也要进行配置，以免后续出现报错）"></a>2.对小车端进行环境配置（没有小车但最好也要进行配置，以免后续出现报错）</h2><p>#通过在终端输入如下代码实现环境配置：<br>cd ~/pibot_ros</p>
 <p>#同步最新代码 </p>
 <p>git pull  </p>
