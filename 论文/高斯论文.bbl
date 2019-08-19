@@ -1,0 +1,85 @@
+\begin{thebibliography}{10}
+
+\bibitem{khatib1986real}
+O.~Khatib, ``Real-time obstacle avoidance for manipulators and mobile robots,''
+  {\em The International Journal of Robotics Research}, vol.~5, no.~1,
+  pp.~90--98, 1986.
+
+\bibitem{mabrouk2008solving}
+M.~Mabrouk and C.~McInnes, ``Solving the potential field local minimum problem
+  using internal agent states,'' {\em Robotics and Autonomous Systems},
+  vol.~56, no.~12, pp.~1050--1060, 2008.
+
+\bibitem{chuang1998analytically}
+J.-H. Chuang and N.~Ahuja, ``An analytically tractable potential field model of
+  free space and its application in obstacle avoidance,'' {\em IEEE
+  Transactions on Systems, Man, and Cybernetics, Part B (Cybernetics)},
+  vol.~28, no.~5, pp.~729--736, 1998.
+
+\bibitem{ratliff2009chomp}
+N.~Ratliff, M.~Zucker, J.~A. Bagnell, and S.~Srinivasa, ``Chomp: Gradient
+  optimization techniques for efficient motion planning,'' in {\em 2009 IEEE
+  International Conference on Robotics and Automation}, pp.~489--494, IEEE,
+  2009.
+
+\bibitem{zucker2013chomp}
+M.~Zucker, N.~Ratliff, A.~D. Dragan, M.~Pivtoraiko, M.~Klingensmith, C.~M.
+  Dellin, J.~A. Bagnell, and S.~S. Srinivasa, ``Chomp: Covariant hamiltonian
+  optimization for motion planning,'' {\em The International Journal of
+  Robotics Research}, vol.~32, no.~9-10, pp.~1164--1193, 2013.
+
+\bibitem{kalakrishnan2011stomp}
+M.~Kalakrishnan, S.~Chitta, E.~Theodorou, P.~Pastor, and S.~Schaal, ``Stomp:
+  Stochastic trajectory optimization for motion planning,'' in {\em 2011 IEEE
+  international conference on robotics and automation}, pp.~4569--4574, IEEE,
+  2011.
+
+\bibitem{he2013multigrid}
+K.~He, E.~Martin, and M.~Zucker, ``Multigrid chomp with local smoothing,'' in
+  {\em 2013 13th IEEE-RAS International Conference on Humanoid Robots
+  (Humanoids)}.
+
+\bibitem{schulman2013finding}
+J.~Schulman, J.~Ho, A.~X. Lee, I.~Awwal, H.~Bradlow, and P.~Abbeel, ``Finding
+  locally optimal, collision-free trajectories with sequential convex
+  optimization.,'' Citeseer.
+
+\bibitem{rasmussengaussian}
+C.~E. Rasmussen, ``Gaussian processes for machine learning,''
+
+\bibitem{vijayakumar2005incremental}
+S.~Vijayakumar, A.~D'souza, and S.~Schaal, ``Incremental online learning in
+  high dimensions,'' {\em Neural computation}, vol.~17, no.~12, pp.~2602--2634,
+  2005.
+
+\bibitem{kersting2007most}
+K.~Kersting, C.~Plagemann, P.~Pfaff, and W.~Burgard, ``Most likely
+  heteroscedastic gaussian process regression,'' in {\em Proceedings of the
+  24th international conference on Machine learning}, pp.~393--400, ACM, 2007.
+
+\bibitem{nguyen2008learning}
+D.~Nguyen-Tuong, J.~Peters, M.~Seeger, and B.~Sch{\"o}lkopf, ``Learning inverse
+  dynamics: A comparison,'' in {\em 16th European Symposium on Artificial
+  Neural Networks (ESANN 2008)}, pp.~13--18, d-side, 2008.
+
+\bibitem{sturm2009body}
+J.~Sturm, C.~Plagemann, and W.~Burgard, ``Body schema learning for robotic
+  manipulators from visual self-perception,'' {\em Journal of
+  Physiology-Paris}, vol.~103, no.~3-5, pp.~220--231, 2009.
+
+\bibitem{deisenroth2011pilco}
+M.~Deisenroth and C.~E. Rasmussen, ``Pilco: A model-based and data-efficient
+  approach to policy search,'' in {\em Proceedings of the 28th International
+  Conference on machine learning (ICML-11)}, pp.~465--472, 2011.
+
+\bibitem{tay2008modelling}
+M.~K.~C. Tay and C.~Laugier, ``Modelling smooth paths using gaussian
+  processes,'' in {\em Field and Service Robotics}, pp.~381--390, Springer,
+  2008.
+
+\bibitem{barfoot2014batch}
+T.~D. Barfoot, C.~H. Tong, and S.~S{\"a}rkk{\"a}, ``Batch continuous-time
+  trajectory estimation as exactly sparse gaussian process regression.,''
+  Citeseer, 2014.
+
+\end{thebibliography}
