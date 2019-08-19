@@ -2,9 +2,14 @@
 \title{Gaussian Process Motion Planning}
 \author{Mustafa Mukadam, Xinyan Yan, and Byron Boots}
 \date{}
-\usepackage{amssymb}
-\usepackage{amsmath}
-\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{bm}
+\usepackage[ruled,linesnumbered,lined]{algorithm2e}
+\usepackage{algpseudocode}
+\usepackage{mathrsfs}
+\usepackage{url}
+\usepackage{caption}
+\usepackage{graphicx,subfig}
 \begin{document}
 \maketitle
 \textbf{\emph{Abstract}-Motion planning is a fundamental tool in robotics,
@@ -47,7 +52,13 @@ CHOMP [7] attempts to reduce the computation time of
 CHOMP when using a large number of states by starting
 with a low-resolution trajectory and gradually increasing the
 resolution at each iteration. Finally, TrajOpt [8] formulates
-motion planning as sequential quadratic programming. Swept volumes are considered to ensure continuous-time safety,
+motion planning as sequential quadratic programming. Swept 
+\footnote{Mustafa Mukadam, Xinyan Yan, and Byron Boots are affiliated with
+the Institute for Robotics and Intelligent Machines, Georgia Institute
+of Technology, Atlanta, GA 30332, USA. mmukadam3@gatech.edu
+{xinyan.yan,bboots}@cc.gatech.edu. This work was funded in
+part by the National Science Foundation, grant number IIS-1464219.}
+volumes are considered to ensure continuous-time safety,
 enabling TrajOpt to solve more problems with fewer states.
 \section{A GAUSSIAN PROCESS MODEL FOR CONTINUOUS-TIME TRAJECTORIES}
 Motion planning traditionally involves finding a smooth,
@@ -555,7 +566,10 @@ was not found, a failed trajectory was returned and the
 problem was marked unsolved by the particular algorithm.
 
 The results on the 24 arm planning problems for all the
-algorithms are summarized in Table I.${}^2$ Average time to
+algorithms are summarized in Table I.\footnote{Parameters for the benchmark were set as follows: For GPMP and
+AugCHOMP, $Q_c=100$. For GPMP, AugCHOMP and CHOMP, $\lambda =
+0.005, \eta = 1$. For STOMP, $k = 5$. For TrajOpt, coeffs = 20, dist pen
+= 0.05.} Average time to
 success was computed from successful runs, unsuccessful
 runs were excluded. Since STOMP is stochastic in nature,
 we ran the problem set on STOMP 5 times. The results for
