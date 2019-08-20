@@ -1,65 +1,62 @@
 This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: 高斯论文.aux
-The style file: ieeetr.bst
+The style file: plain.bst
+Illegal, another \bibstyle command---line 20 of file 高斯论文.aux
+ : \bibstyle
+ :          {ieeetr}
+I'm skipping whatever remains of this command
 Database file #1: cankaowenxian.bib
 "{" immediately follows a field name---line 68 of file cankaowenxian.bib
  :   volume
  :         {9},
 I'm skipping whatever remains of this entry
-"{" immediately follows a field name---line 198 of file cankaowenxian.bib
- :   title
- :        {Analytical dynamics and contact analysis},
-I'm skipping whatever remains of this entry
-Warning--empty year in schulman2013finding
-Warning--empty journal in rasmussengaussian
 Warning--empty booktitle in barfoot2014batch
-Warning--empty year in ko2007gp
 Warning--empty institution in courant1966methods
-Warning--empty author in ratliff2011analytical
-Warning--empty title in ratliff2011analytical
-Warning--empty journal in ratliff2011analytical
-Warning--empty year in ratliff2011analytical
+Warning--empty year in ko2007gp
 Warning--there's a number but no series in quinlan1994real
+Warning--empty journal in rasmussengaussian
+Warning--empty year in ratliffanalytical
+Warning--empty year in schulman2013finding
 You've used 31 entries,
-            1876 wiz_defined-function locations,
-            652 strings with 9350 characters,
-and the built_in function-call counts, 9409 in all, are:
-= -- 930
-> -- 331
-< -- 0
-+ -- 122
-- -- 91
-* -- 657
-:= -- 1248
-add.period$ -- 31
+            2118 wiz_defined-function locations,
+            676 strings with 9974 characters,
+and the built_in function-call counts, 12401 in all, are:
+= -- 1271
+> -- 549
+< -- 14
++ -- 216
+- -- 184
+* -- 822
+:= -- 1929
+add.period$ -- 106
 call.type$ -- 31
-change.case$ -- 30
+change.case$ -- 185
 chr.to.int$ -- 0
-cite$ -- 41
-duplicate$ -- 520
-empty$ -- 930
-format.name$ -- 91
-if$ -- 2304
+cite$ -- 38
+duplicate$ -- 510
+empty$ -- 974
+format.name$ -- 184
+if$ -- 2706
 int.to.chr$ -- 0
 int.to.str$ -- 31
 missing$ -- 31
-newline$ -- 97
-num.names$ -- 30
-pop$ -- 146
+newline$ -- 158
+num.names$ -- 62
+pop$ -- 229
 preamble$ -- 1
-purify$ -- 0
+purify$ -- 154
 quote$ -- 0
-skip$ -- 348
+skip$ -- 380
 stack$ -- 0
-substring$ -- 728
-swap$ -- 209
-text.length$ -- 0
+substring$ -- 826
+swap$ -- 174
+text.length$ -- 14
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
-warning$ -- 10
-while$ -- 93
+type$ -- 122
+warning$ -- 7
+while$ -- 117
 width$ -- 33
-write$ -- 295
+write$ -- 343
 (There were 2 error messages)

@@ -1,157 +1,190 @@
 \begin{thebibliography}{10}
 
-\bibitem{khatib1986real}
-O.~Khatib, ``Real-time obstacle avoidance for manipulators and mobile robots,''
-  {\em The International Journal of Robotics Research}, vol.~5, no.~1,
-  pp.~90--98, 1986.
-
-\bibitem{mabrouk2008solving}
-M.~Mabrouk and C.~McInnes, ``Solving the potential field local minimum problem
-  using internal agent states,'' {\em Robotics and Autonomous Systems},
-  vol.~56, no.~12, pp.~1050--1060, 2008.
-
-\bibitem{chuang1998analytically}
-J.-H. Chuang and N.~Ahuja, ``An analytically tractable potential field model of
-  free space and its application in obstacle avoidance,'' {\em Systems,Man, and
-  Cybernetics, Part B: Cybernetics, IEEE Transactions on}, vol.~28, no.~5,
-  pp.~729--736, 1998.
-
-\bibitem{ratliff2009chomp}
-N.~Ratliff, M.~Zucker, J.~A. Bagnell, and S.~Srinivasa, ``Chomp: Gradient
-  optimization techniques for efficient motion planning,'' in {\em Robotics and
-  Automation, 2009. ICRA'09. IEEE International Conference on}, pp.~489--494,
-  IEEE, 2009.
-
-\bibitem{zucker2013chomp}
-M.~Zucker, N.~Ratliff, A.~D. Dragan, M.~Pivtoraiko, M.~Klingensmith, C.~M.
-  Dellin, J.~A. Bagnell, and S.~S. Srinivasa, ``Chomp: Covariant hamiltonian
-  optimization for motion planning,'' {\em The International Journal of
-  Robotics Research}, vol.~32, no.~9-10, pp.~1164--1193, 2013.
-
-\bibitem{kalakrishnan2011stomp}
-M.~Kalakrishnan, S.~Chitta, E.~Theodorou, P.~Pastor, and S.~Schaal, ``Stomp:
-  Stochastic trajectory optimization for motion planning,'' in {\em Robotics
-  and Automation (ICRA), 2011 IEEE International Conference on},
-  pp.~4569--4574, IEEE, 2011.
-
-\bibitem{he2013multigrid}
-K.~He, E.~Martin, and M.~Zucker, ``Multigrid chomp with local smoothing,'' in
-  {\em Proc. of 13th IEEE-RAS Int. Conference on Humanoid Robots (Humanoids)},
-  2013.
-
-\bibitem{schulman2013finding}
-J.~Schulman, J.~Ho, A.~X. Lee, I.~Awwal, H.~Bradlow, and P.~Abbeel, ``Finding
-  locally optimal, collision-free trajectories with sequential convex
-  optimization.,'' in {\em Robotics: Science and Systems}.
-
-\bibitem{rasmussengaussian}
-C.~E. Rasmussen, ``Gaussian processes for machine learning,'' 2006.
-
-\bibitem{vijayakumar2005incremental}
-S.~Vijayakumar, A.~D'souza, and S.~Schaal, ``Incremental online learning in
-  high dimensions,'' {\em Neural computation}, vol.~17, no.~12, pp.~2602--2634,
-  2005.
-
-\bibitem{kersting2007most}
-K.~Kersting, C.~Plagemann, P.~Pfaff, and W.~Burgard, ``Most likely
-  heteroscedastic gaussian process regression,'' in {\em Proceedings of the
-  24th international conference on Machine learning}, pp.~393--400, ACM, 2007.
-
-\bibitem{nguyen2008learning}
-D.~Nguyen-Tuong, J.~Peters, M.~Seeger, and B.~Sch{\"o}lkopf, ``Learning inverse
-  dynamics: A comparison,'' in {\em 16th European Symposium on Artificial
-  Neural Networks (ESANN 2008)}, pp.~13--18, d-side, 2008.
-
-\bibitem{sturm2009body}
-J.~Sturm, C.~Plagemann, and W.~Burgard, ``Body schema learning for robotic
-  manipulators from visual self-perception,'' {\em Journal of
-  Physiology-Paris}, vol.~103, no.~3-5, pp.~220--231, 2009.
-
-\bibitem{deisenroth2011pilco}
-M.~Deisenroth and C.~E. Rasmussen, ``Pilco: A model-based and data-efficient
-  approach to policy search,'' in {\em Proceedings of the 28th International
-  Conference on machine learning (ICML-11)}, pp.~465--472, 2011.
-
-\bibitem{tay2008modelling}
-M.~K.~C. Tay and C.~Laugier, ``Modelling smooth paths using gaussian
-  processes,'' in {\em Field and Service Robotics}, pp.~381--390, Springer,
-  2008.
+\bibitem{alvarez2011kernels}
+Mauricio~A Alvarez, Lorenzo Rosasco, and Neil~D Lawrence.
+\newblock Kernels for vector-valued functions: a review.
+\newblock {\em arXiv preprint arXiv:1106.6251}, 2011.
 
 \bibitem{barfoot2014batch}
-T.~D. Barfoot, C.~H. Tong, and S.~S{\"a}rkk{\"a}, ``Batch continuous-time
-  trajectory estimation as exactly sparse gaussian process regression.,''
-  Citeseer, 2014.
-
-\bibitem{yan2015incremental}
-X.~Yan, V.~Indelman, and B.~Boots, ``Incremental sparse gp regression for
-  continuous-time trajectory estimation \&amp; mapping,'' {\em arXiv preprint
-  arXiv:1504.02696}, 2015.
-
-\bibitem{ko2009gp}
-J.~Ko and D.~Fox, ``Gp-bayesfilters: Bayesian filtering using gaussian process
-  prediction and observation models,'' {\em Autonomous Robots}, vol.~27, no.~1,
-  pp.~75--90, 2009.
-
-\bibitem{ko2007gp}
-J.~Ko, D.~J. Kleint, D.~Fox, and D.~Haehnelt, ``Gp-ukf: Unscented kalman
-  filters with gaussian process prediction and observation models,'' in {\em
-  2007 IEEE/RSJ International Conference on Intelligent Robots and Systems},
-  pp.~1901--1907, IEEE.
-
-\bibitem{tong2012gaussian}
-C.~H. Tong, P.~Furgale, and T.~D. Barfoot, ``Gaussian process gauss-newton:
-  Non-parametric state estimation,'' in {\em 2012 Ninth Conference on Computer
-  and Robot Vision}, pp.~206--213, IEEE, 2012.
-
-\bibitem{theodorou2010stochastic}
-E.~Theodorou, Y.~Tassa, and E.~Todorov, ``Stochastic differential dynamic
-  programming,'' in {\em Proceedings of the 2010 American Control Conference},
-  pp.~1125--1132, IEEE, 2010.
-
-\bibitem{walter2007exactly}
-M.~R. Walter, R.~M. Eustice, and J.~J. Leonard, ``Exactly sparse extended
-  information filters for feature-based slam,'' {\em The International Journal
-  of Robotics Research}, vol.~26, no.~4, pp.~335--359, 2007.
-
-\bibitem{alvarez2011kernels}
-M.~A. Alvarez, L.~Rosasco, and N.~D. Lawrence, ``Kernels for vector-valued
-  functions: a review,'' {\em arXiv preprint arXiv:1106.6251}, 2011.
-
-\bibitem{courant1966methods}
-R.~Courant and D.~Hilbert, ``Methods of mathematical physics,'' tech. rep.,
-  1966.
-
-\bibitem{ratliff2011analytical}
-
-
-\bibitem{quinlan1994real}
-S.~Quinlan, {\em Real-time modification of collision-free paths}.
-\newblock No.~1537, Stanford University Stanford, 1994.
-
-\bibitem{diankov2008openrave}
-R.~Diankov and J.~Kuffner, ``Openrave: A planning architecture for autonomous
-  robotics,'' {\em Robotics Institute, Pittsburgh, PA, Tech. Rep.
-  CMU-RI-TR-08-34}, vol.~79, 2008.
+Tim~D Barfoot, Chi~Hay Tong, and Simo S{\"a}rkk{\"a}.
+\newblock Batch continuous-time trajectory estimation as exactly sparse
+  gaussian process regression.
+\newblock Citeseer, 2014.
 
 \bibitem{byravan2014space}
-A.~Byravan, B.~Boots, S.~S. Srinivasa, and D.~Fox, ``Space-time functional
-  gradient optimization for motion planning,'' in {\em 2014 IEEE International
-  Conference on Robotics and Automation (ICRA)}, pp.~6499--6506, IEEE, 2014.
-
-\bibitem{dogar2010push}
-M.~R. Dogar and S.~S. Srinivasa, ``Push-grasping with dexterous hands:
-  Mechanics and a method,'' in {\em 2010 IEEE/RSJ International Conference on
-  Intelligent Robots and Systems}, pp.~2123--2130, IEEE, 2010.
-
-\bibitem{dragan2011manipulation}
-A.~D. Dragan, N.~D. Ratliff, and S.~S. Srinivasa, ``Manipulation planning with
-  goal sets using constrained trajectory optimization,'' in {\em 2011 IEEE
-  International Conference on Robotics and Automation}, pp.~4582--4588, IEEE,
-  2011.
+Arunkumar Byravan, Byron Boots, Siddhartha~S Srinivasa, and Dieter Fox.
+\newblock Space-time functional gradient optimization for motion planning.
+\newblock In {\em 2014 IEEE International Conference on Robotics and Automation
+  (ICRA)}, pages 6499--6506. IEEE, 2014.
 
 \bibitem{chang2010planning}
-L.~Y. Chang, S.~S. Srinivasa, and N.~S. Pollard, ``Planning pre-grasp
-  manipulation for transport tasks,'' in {\em 2010 IEEE International
-  Conference on Robotics and Automation}, pp.~2697--2704, IEEE, 2010.
+Lillian~Y Chang, Siddhartha~S Srinivasa, and Nancy~S Pollard.
+\newblock Planning pre-grasp manipulation for transport tasks.
+\newblock In {\em 2010 IEEE International Conference on Robotics and
+  Automation}, pages 2697--2704. IEEE, 2010.
+
+\bibitem{chuang1998analytically}
+Jen-Hui Chuang and Narendra Ahuja.
+\newblock An analytically tractable potential field model of free space and its
+  application in obstacle avoidance.
+\newblock {\em Systems,Man, and Cybernetics, Part B: Cybernetics, IEEE
+  Transactions on}, 28(5):729--736, 1998.
+
+\bibitem{courant1966methods}
+Richard Courant and David Hilbert.
+\newblock Methods of mathematical physics.
+\newblock Technical report, 1966.
+
+\bibitem{deisenroth2011pilco}
+Marc Deisenroth and Carl~E Rasmussen.
+\newblock Pilco: A model-based and data-efficient approach to policy search.
+\newblock In {\em Proceedings of the 28th International Conference on machine
+  learning (ICML-11)}, pages 465--472, 2011.
+
+\bibitem{diankov2008openrave}
+Rosen Diankov and James Kuffner.
+\newblock Openrave: A planning architecture for autonomous robotics.
+\newblock {\em Robotics Institute, Pittsburgh, PA, Tech. Rep. CMU-RI-TR-08-34},
+  79, 2008.
+
+\bibitem{dogar2010push}
+Mehmet~R Dogar and Siddhartha~S Srinivasa.
+\newblock Push-grasping with dexterous hands: Mechanics and a method.
+\newblock In {\em 2010 IEEE/RSJ International Conference on Intelligent Robots
+  and Systems}, pages 2123--2130. IEEE, 2010.
+
+\bibitem{dragan2011manipulation}
+Anca~D Dragan, Nathan~D Ratliff, and Siddhartha~S Srinivasa.
+\newblock Manipulation planning with goal sets using constrained trajectory
+  optimization.
+\newblock In {\em 2011 IEEE International Conference on Robotics and
+  Automation}, pages 4582--4588. IEEE, 2011.
+
+\bibitem{he2013multigrid}
+Keliang He, Elizabeth Martin, and Matt Zucker.
+\newblock Multigrid chomp with local smoothing.
+\newblock In {\em Proc. of 13th IEEE-RAS Int. Conference on Humanoid Robots
+  (Humanoids)}, 2013.
+
+\bibitem{kalakrishnan2011stomp}
+Mrinal Kalakrishnan, Sachin Chitta, Evangelos Theodorou, Peter Pastor, and
+  Stefan Schaal.
+\newblock Stomp: Stochastic trajectory optimization for motion planning.
+\newblock In {\em Robotics and Automation (ICRA), 2011 IEEE International
+  Conference on}, pages 4569--4574. IEEE, 2011.
+
+\bibitem{kersting2007most}
+Kristian Kersting, Christian Plagemann, Patrick Pfaff, and Wolfram Burgard.
+\newblock Most likely heteroscedastic gaussian process regression.
+\newblock In {\em Proceedings of the 24th international conference on Machine
+  learning}, pages 393--400. ACM, 2007.
+
+\bibitem{khatib1986real}
+Oussama Khatib.
+\newblock Real-time obstacle avoidance for manipulators and mobile robots.
+\newblock {\em The International Journal of Robotics Research}, 5(1):90--98,
+  1986.
+
+\bibitem{ko2009gp}
+Jonathan Ko and Dieter Fox.
+\newblock Gp-bayesfilters: Bayesian filtering using gaussian process prediction
+  and observation models.
+\newblock {\em Autonomous Robots}, 27(1):75--90, 2009.
+
+\bibitem{ko2007gp}
+Jonathan Ko, Daniel~J Kleint, Dieter Fox, and Dirk Haehnelt.
+\newblock Gp-ukf: Unscented kalman filters with gaussian process prediction and
+  observation models.
+\newblock In {\em 2007 IEEE/RSJ International Conference on Intelligent Robots
+  and Systems}, pages 1901--1907. IEEE.
+
+\bibitem{mabrouk2008solving}
+M~Mabrouk and CR~McInnes.
+\newblock Solving the potential field local minimum problem using internal
+  agent states.
+\newblock {\em Robotics and Autonomous Systems}, 56(12):1050--1060, 2008.
+
+\bibitem{nguyen2008learning}
+D~Nguyen-Tuong, J~Peters, M~Seeger, and B~Sch{\"o}lkopf.
+\newblock Learning inverse dynamics: A comparison.
+\newblock In {\em 16th European Symposium on Artificial Neural Networks (ESANN
+  2008)}, pages 13--18. d-side, 2008.
+
+\bibitem{quinlan1994real}
+Sean Quinlan.
+\newblock {\em Real-time modification of collision-free paths}.
+\newblock Number 1537. Stanford University Stanford, 1994.
+
+\bibitem{rasmussengaussian}
+Carl~Edward Rasmussen.
+\newblock Gaussian processes for machine learning.
+\newblock 2006.
+
+\bibitem{ratliffanalytical}
+Nathan Ratliff.
+\newblock Analytical dynamics and contact analysis.
+\newblock {\em Available:http://ipvs.informatik.uni-stuttgart.de}.
+
+\bibitem{ratliff2009chomp}
+Nathan Ratliff, Matt Zucker, J~Andrew Bagnell, and Siddhartha Srinivasa.
+\newblock Chomp: Gradient optimization techniques for efficient motion
+  planning.
+\newblock In {\em Robotics and Automation, 2009. ICRA'09. IEEE International
+  Conference on}, pages 489--494. IEEE, 2009.
+
+\bibitem{schulman2013finding}
+John Schulman, Jonathan Ho, Alex~X Lee, Ibrahim Awwal, Henry Bradlow, and
+  Pieter Abbeel.
+\newblock Finding locally optimal, collision-free trajectories with sequential
+  convex optimization.
+\newblock In {\em Robotics: Science and Systems}.
+
+\bibitem{sturm2009body}
+J{\"u}rgen Sturm, Christian Plagemann, and Wolfram Burgard.
+\newblock Body schema learning for robotic manipulators from visual
+  self-perception.
+\newblock {\em Journal of Physiology-Paris}, 103(3-5):220--231, 2009.
+
+\bibitem{tay2008modelling}
+Meng Keat~Christopher Tay and Christian Laugier.
+\newblock Modelling smooth paths using gaussian processes.
+\newblock In {\em Field and Service Robotics}, pages 381--390. Springer, 2008.
+
+\bibitem{theodorou2010stochastic}
+Evangelos Theodorou, Yuval Tassa, and Emo Todorov.
+\newblock Stochastic differential dynamic programming.
+\newblock In {\em Proceedings of the 2010 American Control Conference}, pages
+  1125--1132. IEEE, 2010.
+
+\bibitem{tong2012gaussian}
+Chi~Hay Tong, Paul Furgale, and Timothy~D Barfoot.
+\newblock Gaussian process gauss-newton: Non-parametric state estimation.
+\newblock In {\em 2012 Ninth Conference on Computer and Robot Vision}, pages
+  206--213. IEEE, 2012.
+
+\bibitem{vijayakumar2005incremental}
+Sethu Vijayakumar, Aaron D'souza, and Stefan Schaal.
+\newblock Incremental online learning in high dimensions.
+\newblock {\em Neural computation}, 17(12):2602--2634, 2005.
+
+\bibitem{walter2007exactly}
+Matthew~R Walter, Ryan~M Eustice, and John~J Leonard.
+\newblock Exactly sparse extended information filters for feature-based slam.
+\newblock {\em The International Journal of Robotics Research}, 26(4):335--359,
+  2007.
+
+\bibitem{yan2015incremental}
+Xinyan Yan, Vadim Indelman, and Byron Boots.
+\newblock Incremental sparse gp regression for continuous-time trajectory
+  estimation \&amp; mapping.
+\newblock {\em arXiv preprint arXiv:1504.02696}, 2015.
+
+\bibitem{zucker2013chomp}
+Matt Zucker, Nathan Ratliff, Anca~D Dragan, Mihail Pivtoraiko, Matthew
+  Klingensmith, Christopher~M Dellin, J~Andrew Bagnell, and Siddhartha~S
+  Srinivasa.
+\newblock Chomp: Covariant hamiltonian optimization for motion planning.
+\newblock {\em The International Journal of Robotics Research},
+  32(9-10):1164--1193, 2013.
 
 \end{thebibliography}

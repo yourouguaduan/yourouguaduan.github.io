@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2019.7.24)  20 AUG 2019 10:00
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2019.7.24)  20 AUG 2019 15:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -359,11 +359,101 @@ Package: subfig 2005/06/28 ver: 1.3 subfig package
 \sf@top=\skip71
 \sf@bottom=\skip72
 )
-(/usr/share/texlive/texmf-dist/tex/latex/cite/cite.sty
-LaTeX Info: Redefining \cite on input line 302.
-LaTeX Info: Redefining \nocite on input line 332.
-Package: cite 2015/02/27  v 5.5
-) (./高斯论文.aux)
+(/usr/share/texlive/texmf-dist/tex/latex/preprint/balance.sty
+Package: balance 1999/02/23 4.3 (PWD)
+\oldvsize=\dimen151
+) (./高斯论文.aux
+
+LaTeX Warning: Label `ieeetr' multiply defined.
+
+
+LaTeX Warning: Label `ieeetr' multiply defined.
+
+
+LaTeX Warning: Label `ieeetr' multiply defined.
+
+
+LaTeX Warning: Label `ieeetr' multiply defined.
+
+
+LaTeX Warning: Label `ieeetr' multiply defined.
+
+
+LaTeX Warning: Label `ieeetr' multiply defined.
+
+
+LaTeX Warning: Label `ieeetr' multiply defined.
+
+
+LaTeX Warning: Label `ieeetr' multiply defined.
+
+
+LaTeX Warning: Label `ieeetr' multiply defined.
+
+
+LaTeX Warning: Label `ieeetr' multiply defined.
+
+
+LaTeX Warning: Label `ieeetr' multiply defined.
+
+
+LaTeX Warning: Label `ieeetr' multiply defined.
+
+
+LaTeX Warning: Label `ieeetr' multiply defined.
+
+
+LaTeX Warning: Label `ieeetr' multiply defined.
+
+
+LaTeX Warning: Label `ieeetr' multiply defined.
+
+
+LaTeX Warning: Label `ieeetr' multiply defined.
+
+
+LaTeX Warning: Label `ieeetr' multiply defined.
+
+
+LaTeX Warning: Label `ieeetr' multiply defined.
+
+
+LaTeX Warning: Label `ieeetr' multiply defined.
+
+
+LaTeX Warning: Label `ieeetr' multiply defined.
+
+
+LaTeX Warning: Label `ieeetr' multiply defined.
+
+
+LaTeX Warning: Label `ieeetr' multiply defined.
+
+
+LaTeX Warning: Label `ieeetr' multiply defined.
+
+
+LaTeX Warning: Label `ieeetr' multiply defined.
+
+
+LaTeX Warning: Label `ieeetr' multiply defined.
+
+
+LaTeX Warning: Label `ieeetr' multiply defined.
+
+
+LaTeX Warning: Label `ieeetr' multiply defined.
+
+
+LaTeX Warning: Label `ieeetr' multiply defined.
+
+
+LaTeX Warning: Label `ieeetr' multiply defined.
+
+
+LaTeX Warning: Label `ieeetr' multiply defined.
+
+)
 \openout1 = `高斯论文.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
@@ -391,16 +481,16 @@ Underfull \hbox (badness 4765) in paragraph at lines 19--19
 
 Missing character: There is no – in font ptmr7t!
 Missing character: There is no – in font ptmr7t!
-LaTeX Font Info:    Try loading font information for U+msa on input line 98.
+LaTeX Font Info:    Try loading font information for U+msa on input line 99.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 98.
+LaTeX Font Info:    Try loading font information for U+msb on input line 99.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 98.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 99.
 
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
@@ -413,7 +503,7 @@ Missing character: There is no ” in font ptmr7t!
  [2] [3]
 
 Package amsmath Warning: Cannot use `split' here;
-(amsmath)                trying to recover with `aligned' on input line 463.
+(amsmath)                trying to recover with `aligned' on input line 464.
 
 File: 论文1.png Graphic file (type QTm)
 <use  "论文1.png" >
@@ -422,12 +512,102 @@ Underfull \vbox (badness 1796) has occurred while \output is active []
  [4]
 [5]
 File: 论文2.png Graphic file (type QTm)
- <use  "论文2.png" > [6] (./高斯论文.bbl) [7] (./高斯论文.aux) ) 
+ <use  "论文2.png" > [6]
+Missing character: There is no “ in font ptmr7t!
+Missing character: There is no ” in font ptmr7t!
+Missing character: There is no – in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+Missing character: There is no ” in font ptmr7t!
+Missing character: There is no – in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+Missing character: There is no ” in font ptmr7t!
+Missing character: There is no ’ in font ptmri7t!
+Missing character: There is no – in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+Missing character: There is no ” in font ptmr7t!
+Missing character: There is no – in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+Missing character: There is no ” in font ptmr7t!
+Missing character: There is no – in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+Missing character: There is no ” in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+Missing character: There is no ” in font ptmr7t!
+Missing character: There is no – in font ptmr7t!
+Missing character: There is no ’ in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+Missing character: There is no ” in font ptmr7t!
+Missing character: There is no – in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+Missing character: There is no ” in font ptmr7t!
+Missing character: There is no – in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+Missing character: There is no ¨ in font ptmr7t!
+Missing character: There is no ” in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+Missing character: There is no ” in font ptmr7t!
+Missing character: There is no – in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+Missing character: There is no ” in font ptmr7t!
+Missing character: There is no – in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+Missing character: There is no ” in font ptmr7t!
+Missing character: There is no – in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+Missing character: There is no ” in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+Missing character: There is no ” in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+Missing character: There is no ” in font ptmr7t!
+Missing character: There is no – in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+Missing character: There is no ” in font ptmr7t!
+Missing character: There is no – in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+Missing character: There is no ” in font ptmr7t!
+Missing character: There is no – in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+Missing character: There is no ” in font ptmr7t!
+Missing character: There is no – in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+Missing character: There is no ” in font ptmr7t!
+Missing character: There is no – in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+Missing character: There is no ” in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+Missing character: There is no ” in font ptmr7t!
+
+Underfull \hbox (badness 2418) in paragraph at lines 788--790
+[]\OT1/ptm/m/n/8 N. Ratliff, An-a-lyt-i-cal dy-nam-ics and con-tact anal-y-sis,
+ \OT1/ptm/m/it/8 Avail-able:
+ []
+
+Missing character: There is no “ in font ptmr7t!
+Missing character: There is no ” in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+Missing character: There is no ” in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+Missing character: There is no ” in font ptmr7t!
+Missing character: There is no – in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+Missing character: There is no ” in font ptmr7t!
+Missing character: There is no – in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+Missing character: There is no ” in font ptmr7t!
+Missing character: There is no – in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+Missing character: There is no ” in font ptmr7t!
+Missing character: There is no – in font ptmr7t!
+[7] (./高斯论文.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 5424 strings out of 493638
- 84247 string characters out of 6146796
- 169545 words of memory out of 5000000
- 8758 multiletter control sequences out of 15000+600000
+ 5320 strings out of 493638
+ 82844 string characters out of 6146796
+ 171792 words of memory out of 5000000
+ 8656 multiletter control sequences out of 15000+600000
  36092 words of font info for 96 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  36i,18n,39p,670b,265s stack positions out of 5000i,500n,10000p,200000b,80000s
