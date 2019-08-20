@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2019.7.24)  19 AUG 2019 21:45
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2019.7.24)  20 AUG 2019 10:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -422,14 +422,12 @@ Underfull \vbox (badness 1796) has occurred while \output is active []
  [4]
 [5]
 File: 论文2.png Graphic file (type QTm)
- <use  "论文2.png" > [6] (./高斯论文.bbl) [7
-
-] (./高斯论文.aux) ) 
+ <use  "论文2.png" > [6] (./高斯论文.bbl) [7] (./高斯论文.aux) ) 
 Here is how much of TeX's memory you used:
- 5409 strings out of 493638
- 83968 string characters out of 6146796
+ 5424 strings out of 493638
+ 84247 string characters out of 6146796
  169545 words of memory out of 5000000
- 8743 multiletter control sequences out of 15000+600000
+ 8758 multiletter control sequences out of 15000+600000
  36092 words of font info for 96 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  36i,18n,39p,670b,265s stack positions out of 5000i,500n,10000p,200000b,80000s

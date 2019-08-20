@@ -12,15 +12,15 @@ M.~Mabrouk and C.~McInnes, ``Solving the potential field local minimum problem
 
 \bibitem{chuang1998analytically}
 J.-H. Chuang and N.~Ahuja, ``An analytically tractable potential field model of
-  free space and its application in obstacle avoidance,'' {\em IEEE
-  Transactions on Systems, Man, and Cybernetics, Part B (Cybernetics)},
-  vol.~28, no.~5, pp.~729--736, 1998.
+  free space and its application in obstacle avoidance,'' {\em Systems,Man, and
+  Cybernetics, Part B: Cybernetics, IEEE Transactions on}, vol.~28, no.~5,
+  pp.~729--736, 1998.
 
 \bibitem{ratliff2009chomp}
 N.~Ratliff, M.~Zucker, J.~A. Bagnell, and S.~Srinivasa, ``Chomp: Gradient
-  optimization techniques for efficient motion planning,'' in {\em 2009 IEEE
-  International Conference on Robotics and Automation}, pp.~489--494, IEEE,
-  2009.
+  optimization techniques for efficient motion planning,'' in {\em Robotics and
+  Automation, 2009. ICRA'09. IEEE International Conference on}, pp.~489--494,
+  IEEE, 2009.
 
 \bibitem{zucker2013chomp}
 M.~Zucker, N.~Ratliff, A.~D. Dragan, M.~Pivtoraiko, M.~Klingensmith, C.~M.
@@ -30,22 +30,22 @@ M.~Zucker, N.~Ratliff, A.~D. Dragan, M.~Pivtoraiko, M.~Klingensmith, C.~M.
 
 \bibitem{kalakrishnan2011stomp}
 M.~Kalakrishnan, S.~Chitta, E.~Theodorou, P.~Pastor, and S.~Schaal, ``Stomp:
-  Stochastic trajectory optimization for motion planning,'' in {\em 2011 IEEE
-  international conference on robotics and automation}, pp.~4569--4574, IEEE,
-  2011.
+  Stochastic trajectory optimization for motion planning,'' in {\em Robotics
+  and Automation (ICRA), 2011 IEEE International Conference on},
+  pp.~4569--4574, IEEE, 2011.
 
 \bibitem{he2013multigrid}
 K.~He, E.~Martin, and M.~Zucker, ``Multigrid chomp with local smoothing,'' in
-  {\em 2013 13th IEEE-RAS International Conference on Humanoid Robots
-  (Humanoids)}.
+  {\em Proc. of 13th IEEE-RAS Int. Conference on Humanoid Robots (Humanoids)},
+  2013.
 
 \bibitem{schulman2013finding}
 J.~Schulman, J.~Ho, A.~X. Lee, I.~Awwal, H.~Bradlow, and P.~Abbeel, ``Finding
   locally optimal, collision-free trajectories with sequential convex
-  optimization.,'' Citeseer.
+  optimization.,'' in {\em Robotics: Science and Systems}.
 
 \bibitem{rasmussengaussian}
-C.~E. Rasmussen, ``Gaussian processes for machine learning,''
+C.~E. Rasmussen, ``Gaussian processes for machine learning,'' 2006.
 
 \bibitem{vijayakumar2005incremental}
 S.~Vijayakumar, A.~D'souza, and S.~Schaal, ``Incremental online learning in
@@ -81,5 +81,77 @@ M.~K.~C. Tay and C.~Laugier, ``Modelling smooth paths using gaussian
 T.~D. Barfoot, C.~H. Tong, and S.~S{\"a}rkk{\"a}, ``Batch continuous-time
   trajectory estimation as exactly sparse gaussian process regression.,''
   Citeseer, 2014.
+
+\bibitem{yan2015incremental}
+X.~Yan, V.~Indelman, and B.~Boots, ``Incremental sparse gp regression for
+  continuous-time trajectory estimation \&amp; mapping,'' {\em arXiv preprint
+  arXiv:1504.02696}, 2015.
+
+\bibitem{ko2009gp}
+J.~Ko and D.~Fox, ``Gp-bayesfilters: Bayesian filtering using gaussian process
+  prediction and observation models,'' {\em Autonomous Robots}, vol.~27, no.~1,
+  pp.~75--90, 2009.
+
+\bibitem{ko2007gp}
+J.~Ko, D.~J. Kleint, D.~Fox, and D.~Haehnelt, ``Gp-ukf: Unscented kalman
+  filters with gaussian process prediction and observation models,'' in {\em
+  2007 IEEE/RSJ International Conference on Intelligent Robots and Systems},
+  pp.~1901--1907, IEEE.
+
+\bibitem{tong2012gaussian}
+C.~H. Tong, P.~Furgale, and T.~D. Barfoot, ``Gaussian process gauss-newton:
+  Non-parametric state estimation,'' in {\em 2012 Ninth Conference on Computer
+  and Robot Vision}, pp.~206--213, IEEE, 2012.
+
+\bibitem{theodorou2010stochastic}
+E.~Theodorou, Y.~Tassa, and E.~Todorov, ``Stochastic differential dynamic
+  programming,'' in {\em Proceedings of the 2010 American Control Conference},
+  pp.~1125--1132, IEEE, 2010.
+
+\bibitem{walter2007exactly}
+M.~R. Walter, R.~M. Eustice, and J.~J. Leonard, ``Exactly sparse extended
+  information filters for feature-based slam,'' {\em The International Journal
+  of Robotics Research}, vol.~26, no.~4, pp.~335--359, 2007.
+
+\bibitem{alvarez2011kernels}
+M.~A. Alvarez, L.~Rosasco, and N.~D. Lawrence, ``Kernels for vector-valued
+  functions: a review,'' {\em arXiv preprint arXiv:1106.6251}, 2011.
+
+\bibitem{courant1966methods}
+R.~Courant and D.~Hilbert, ``Methods of mathematical physics,'' tech. rep.,
+  1966.
+
+\bibitem{ratliff2011analytical}
+
+
+\bibitem{quinlan1994real}
+S.~Quinlan, {\em Real-time modification of collision-free paths}.
+\newblock No.~1537, Stanford University Stanford, 1994.
+
+\bibitem{diankov2008openrave}
+R.~Diankov and J.~Kuffner, ``Openrave: A planning architecture for autonomous
+  robotics,'' {\em Robotics Institute, Pittsburgh, PA, Tech. Rep.
+  CMU-RI-TR-08-34}, vol.~79, 2008.
+
+\bibitem{byravan2014space}
+A.~Byravan, B.~Boots, S.~S. Srinivasa, and D.~Fox, ``Space-time functional
+  gradient optimization for motion planning,'' in {\em 2014 IEEE International
+  Conference on Robotics and Automation (ICRA)}, pp.~6499--6506, IEEE, 2014.
+
+\bibitem{dogar2010push}
+M.~R. Dogar and S.~S. Srinivasa, ``Push-grasping with dexterous hands:
+  Mechanics and a method,'' in {\em 2010 IEEE/RSJ International Conference on
+  Intelligent Robots and Systems}, pp.~2123--2130, IEEE, 2010.
+
+\bibitem{dragan2011manipulation}
+A.~D. Dragan, N.~D. Ratliff, and S.~S. Srinivasa, ``Manipulation planning with
+  goal sets using constrained trajectory optimization,'' in {\em 2011 IEEE
+  International Conference on Robotics and Automation}, pp.~4582--4588, IEEE,
+  2011.
+
+\bibitem{chang2010planning}
+L.~Y. Chang, S.~S. Srinivasa, and N.~S. Pollard, ``Planning pre-grasp
+  manipulation for transport tasks,'' in {\em 2010 IEEE International
+  Conference on Robotics and Automation}, pp.~2697--2704, IEEE, 2010.
 
 \end{thebibliography}

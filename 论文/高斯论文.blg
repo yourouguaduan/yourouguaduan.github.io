@@ -3,51 +3,63 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: 高斯论文.aux
 The style file: ieeetr.bst
 Database file #1: cankaowenxian.bib
-Warning--empty year in he2013multigrid
-Warning--empty booktitle in schulman2013finding
+"{" immediately follows a field name---line 68 of file cankaowenxian.bib
+ :   volume
+ :         {9},
+I'm skipping whatever remains of this entry
+"{" immediately follows a field name---line 198 of file cankaowenxian.bib
+ :   title
+ :        {Analytical dynamics and contact analysis},
+I'm skipping whatever remains of this entry
 Warning--empty year in schulman2013finding
 Warning--empty journal in rasmussengaussian
-Warning--empty year in rasmussengaussian
 Warning--empty booktitle in barfoot2014batch
-You've used 16 entries,
+Warning--empty year in ko2007gp
+Warning--empty institution in courant1966methods
+Warning--empty author in ratliff2011analytical
+Warning--empty title in ratliff2011analytical
+Warning--empty journal in ratliff2011analytical
+Warning--empty year in ratliff2011analytical
+Warning--there's a number but no series in quinlan1994real
+You've used 31 entries,
             1876 wiz_defined-function locations,
-            576 strings with 6727 characters,
-and the built_in function-call counts, 5108 in all, are:
-= -- 500
-> -- 189
+            652 strings with 9350 characters,
+and the built_in function-call counts, 9409 in all, are:
+= -- 930
+> -- 331
 < -- 0
-+ -- 69
-- -- 53
-* -- 366
-:= -- 686
-add.period$ -- 15
-call.type$ -- 16
-change.case$ -- 16
++ -- 122
+- -- 91
+* -- 657
+:= -- 1248
+add.period$ -- 31
+call.type$ -- 31
+change.case$ -- 30
 chr.to.int$ -- 0
-cite$ -- 22
-duplicate$ -- 278
-empty$ -- 494
-format.name$ -- 53
-if$ -- 1242
+cite$ -- 41
+duplicate$ -- 520
+empty$ -- 930
+format.name$ -- 91
+if$ -- 2304
 int.to.chr$ -- 0
-int.to.str$ -- 16
-missing$ -- 16
-newline$ -- 51
-num.names$ -- 16
-pop$ -- 76
+int.to.str$ -- 31
+missing$ -- 31
+newline$ -- 97
+num.names$ -- 30
+pop$ -- 146
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 189
+skip$ -- 348
 stack$ -- 0
-substring$ -- 400
-swap$ -- 113
+substring$ -- 728
+swap$ -- 209
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 6
-while$ -- 52
-width$ -- 18
-write$ -- 155
-(There were 6 warnings)
+warning$ -- 10
+while$ -- 93
+width$ -- 33
+write$ -- 295
+(There were 2 error messages)
