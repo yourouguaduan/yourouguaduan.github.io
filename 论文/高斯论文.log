@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2019.7.24)  20 AUG 2019 15:56
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2019.7.24)  20 AUG 2019 20:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -481,16 +481,16 @@ Underfull \hbox (badness 4765) in paragraph at lines 19--19
 
 Missing character: There is no – in font ptmr7t!
 Missing character: There is no – in font ptmr7t!
-LaTeX Font Info:    Try loading font information for U+msa on input line 99.
+LaTeX Font Info:    Try loading font information for U+msa on input line 98.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 99.
+LaTeX Font Info:    Try loading font information for U+msb on input line 98.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 99.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 98.
 
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
@@ -503,7 +503,7 @@ Missing character: There is no ” in font ptmr7t!
  [2] [3]
 
 Package amsmath Warning: Cannot use `split' here;
-(amsmath)                trying to recover with `aligned' on input line 464.
+(amsmath)                trying to recover with `aligned' on input line 463.
 
 File: 论文1.png Graphic file (type QTm)
 <use  "论文1.png" >
@@ -577,7 +577,7 @@ Missing character: There is no ” in font ptmr7t!
 Missing character: There is no “ in font ptmr7t!
 Missing character: There is no ” in font ptmr7t!
 
-Underfull \hbox (badness 2418) in paragraph at lines 788--790
+Underfull \hbox (badness 2418) in paragraph at lines 787--789
 []\OT1/ptm/m/n/8 N. Ratliff, An-a-lyt-i-cal dy-nam-ics and con-tact anal-y-sis,
  \OT1/ptm/m/it/8 Avail-able:
  []
