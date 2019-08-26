@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="http://yourouguaduan.github.com/child">
   <title>电机转动步骤及相关注意事项 | lin</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="![图1](/home/yourouguaduan/hexo/source/_posts/电机转动步骤及相关注意事项/2019-08-18 21-55-25屏幕截图.png) ![图2](/home/yourouguaduan/hexo/source/_posts/电机转动步骤及相关注意事项/2019-08-18 21-22-04屏幕截图.png)">
+  <meta name="description" content="一、接线将电源与主板相连接（此次对主板采用12v供电方案）按下开关键，利用micro usb将主板与上位机（即Ubuntu系统的电脑）相连接，将主板与电机相连，完成接线步骤。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="电机转动步骤及相关注意事项">
 <meta property="og:url" content="http://yourouguaduan.github.com/child/2019/08/25/电机转动步骤及相关注意事项/index.html">
 <meta property="og:site_name" content="lin">
-<meta property="og:description" content="![图1](/home/yourouguaduan/hexo/source/_posts/电机转动步骤及相关注意事项/2019-08-18 21-55-25屏幕截图.png) ![图2](/home/yourouguaduan/hexo/source/_posts/电机转动步骤及相关注意事项/2019-08-18 21-22-04屏幕截图.png)">
+<meta property="og:description" content="一、接线将电源与主板相连接（此次对主板采用12v供电方案）按下开关键，利用micro usb将主板与上位机（即Ubuntu系统的电脑）相连接，将主板与电机相连，完成接线步骤。">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-08-25T13:54:57.783Z">
+<meta property="og:updated_time" content="2019-08-26T01:32:00.466Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="电机转动步骤及相关注意事项">
-<meta name="twitter:description" content="![图1](/home/yourouguaduan/hexo/source/_posts/电机转动步骤及相关注意事项/2019-08-18 21-55-25屏幕截图.png) ![图2](/home/yourouguaduan/hexo/source/_posts/电机转动步骤及相关注意事项/2019-08-18 21-22-04屏幕截图.png)">
+<meta name="twitter:description" content="一、接线将电源与主板相连接（此次对主板采用12v供电方案）按下开关键，利用micro usb将主板与上位机（即Ubuntu系统的电脑）相连接，将主板与电机相连，完成接线步骤。">
   
     <link rel="alternative" href="/atom.xml" title="lin" type="application/atom+xml">
   
@@ -180,8 +180,31 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>![图1](/home/yourouguaduan/hexo/source/_posts/电机转动步骤及相关注意事项/2019-08-18 21-55-25屏幕截图.png)</p>
-<p>![图2](/home/yourouguaduan/hexo/source/_posts/电机转动步骤及相关注意事项/2019-08-18 21-22-04屏幕截图.png)</p>
+        <h1 id="一、接线"><a href="#一、接线" class="headerlink" title="一、接线"></a>一、接线</h1><p>将电源与主板相连接（此次对主板采用12v供电方案）按下开关键，利用micro usb将主板与上位机（即Ubuntu系统的电脑）相连接，将主板与电机相连，完成接线步骤。</p>
+<a id="more"></a>
+
+<h1 id="二、环境配置"><a href="#二、环境配置" class="headerlink" title="二、环境配置"></a>二、环境配置</h1><h2 id="1-小车端环境的配置"><a href="#1-小车端环境的配置" class="headerlink" title="1.小车端环境的配置"></a>1.小车端环境的配置</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">cd ~/pibot_ros</span><br><span class="line"># 更新代码</span><br><span class="line">git pull  </span><br><span class="line"># 按实际情况选择相应的小车类型，控制板类型，雷达类型，Machine（这里选0）</span><br><span class="line">./pibot_init_env.sh </span><br><span class="line">source ~/.bashrc</span><br><span class="line">cd ~/pibot_ros/ros_ws/</span><br><span class="line"></span><br><span class="line"># 对PIBOT文件进行编译</span><br><span class="line">catkin_make</span><br><span class="line">source ~/.bashrc</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-Ubuntu主机环境的配置"><a href="#2-Ubuntu主机环境的配置" class="headerlink" title="2.Ubuntu主机环境的配置"></a>2.Ubuntu主机环境的配置</h2><p>首先将pibot_ros.tar.bz2复制至主目录，然后打开新终端，输入如下代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"># 打开新终端</span><br><span class="line">cd ~</span><br><span class="line"></span><br><span class="line"># 解压</span><br><span class="line">tar jxvf pibot_ros.tar.bz2</span><br><span class="line"></span><br><span class="line">cd ~/pibot_ros</span><br><span class="line">#这里根据提示输入小车类型，控制板类型，雷达类型，Machine类型(这里选1)</span><br><span class="line">./pibot_init_env.sh </span><br><span class="line"></span><br><span class="line">source ~/.bashrc</span><br><span class="line">cd ~/pibot_ros/ros_ws/</span><br><span class="line"></span><br><span class="line"># 对PIBOT文件进行编译</span><br><span class="line">catkin_make</span><br><span class="line">source ~/.bashrc</span><br></pre></td></tr></table></figure>
+
+<h1 id="三、驱动电机"><a href="#三、驱动电机" class="headerlink" title="三、驱动电机"></a>三、驱动电机</h1><h2 id="1、安装脚本"><a href="#1、安装脚本" class="headerlink" title="1、安装脚本"></a>1、安装脚本</h2><p>打开pibot_ros文件夹，打开新终端，对pibot_install_ros.sh和pibot_add_upstart.sh两个脚本进行安装。</p>
+<h2 id="2、测试硬件连接状态"><a href="#2、测试硬件连接状态" class="headerlink" title="2、测试硬件连接状态"></a>2、测试硬件连接状态</h2><p>输入以下内容查看硬件链接是否正常。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 打开新终端</span><br><span class="line">ls /dev/pibot -l</span><br></pre></td></tr></table></figure>
+
+<p>![正常连接显示](/2019-08-18 21-22-04屏幕截图.png)</p>
+<h2 id="3、实现电机转动"><a href="#3、实现电机转动" class="headerlink" title="3、实现电机转动"></a>3、实现电机转动</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#打开新终端</span><br><span class="line">pibot_bringup</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#打开新终端</span><br><span class="line">pibot_control</span><br></pre></td></tr></table></figure>
+
+<p>键盘上按下i键，电机转动。</p>
+<h1 id="四、可能遇到的问题"><a href="#四、可能遇到的问题" class="headerlink" title="四、可能遇到的问题"></a>四、可能遇到的问题</h1><h2 id="1、出现resourcenotfound"><a href="#1、出现resourcenotfound" class="headerlink" title="1、出现resourcenotfound"></a>1、出现resourcenotfound</h2><p>在打开的新终端中输入pibot_control之后，出现resourcenotfound的情况，可能是未对脚本进行正确的安装，在终端中将pibot_install_ros.sh和pibot_add_upstart.sh两个脚本进行安装即可解决。</p>
+<h2 id="2、输出的信息正确但电机不转动"><a href="#2、输出的信息正确但电机不转动" class="headerlink" title="2、输出的信息正确但电机不转动"></a>2、输出的信息正确但电机不转动</h2><h3 id="①主板底层未收到信息"><a href="#①主板底层未收到信息" class="headerlink" title="①主板底层未收到信息"></a>①主板底层未收到信息</h3><p>安装串口调试工具（以下以cutecom为例），查看输出栏是否有信息正常输出。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">#下载安装命令</span><br><span class="line">sudo apt-get install cutecom</span><br><span class="line">#运行cutecom软件</span><br><span class="line">sudo cutecom</span><br><span class="line">#查看主板连接端口</span><br><span class="line">ls /dev/pibot -l</span><br><span class="line">#对cutecom面板里的device进行对应选择或修改</span><br><span class="line">#打开新终端</span><br><span class="line">pibot_bringup</span><br><span class="line">#打开新终端</span><br><span class="line">pibot_control</span><br><span class="line">#按下i，并点击cutecom面板的open</span><br></pre></td></tr></table></figure>
+
+<p>如果输出板有输出（如下图）则证明底层接受信息正常，反之则证明底层接受出现问题。</p>
+<p>![正常输出视图](/2019-08-18 21-55-25屏幕截图.png)</p>
+<h3 id="②电源接线问题"><a href="#②电源接线问题" class="headerlink" title="②电源接线问题"></a>②电源接线问题</h3><p>如果串口调试正常，有可能是电源问题或者接线问题。查看单元接口处开关是否正常，查看主板与电机的接线是否正常连接。</p>
 
       
 
@@ -274,15 +297,6 @@
 
   
 <nav id="article-nav">
-  
-    <a href="/2019/08/26/test/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          test
-        
-      </div>
-    </a>
   
   
     <a href="/2019/08/20/latex模板/" id="article-nav-older" class="article-nav-link-wrap">
