@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2019.7.24)  22 AUG 2019 08:01
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2019.7.24)  1 SEP 2019 16:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -503,7 +503,7 @@ Missing character: There is no ” in font ptmr7t!
  [2] [3]
 
 Package amsmath Warning: Cannot use `split' here;
-(amsmath)                trying to recover with `aligned' on input line 463.
+(amsmath)                trying to recover with `aligned' on input line 473.
 
 File: 论文1.png Graphic file (type QTm)
 <use  "论文1.png" >
@@ -577,7 +577,7 @@ Missing character: There is no ” in font ptmr7t!
 Missing character: There is no “ in font ptmr7t!
 Missing character: There is no ” in font ptmr7t!
 
-Underfull \hbox (badness 2418) in paragraph at lines 787--789
+Underfull \hbox (badness 2418) in paragraph at lines 797--799
 []\OT1/ptm/m/n/8 N. Ratliff, An-a-lyt-i-cal dy-nam-ics and con-tact anal-y-sis,
  \OT1/ptm/m/it/8 Avail-able:
  []

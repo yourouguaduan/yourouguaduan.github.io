@@ -241,7 +241,17 @@ the case of a GP generated from the LTV-SDE in Sec. II-A,
 interpolation is very fast, involving only two nearby states
 and is performed in $\textit{O}(1)$ time [16]:
 \begin{equation}
-\tilde{\xi}(\tau)=\mu(\tau)+[\Lambda(\tau)\Psi(\tau)]([{\xi_i}\\{\xi_{i+1}}]-[{\mu_i}\\{\mu_{i+1}}])\tag{15}
+\tilde{\xi}(\tau)=\mu(\tau)+[\Lambda(\tau)\Psi(\tau)]
+(\left[
+\begin{smallmatrix}{\xi_i}\\{\xi_{i+1}}
+\end{smallmatrix}
+\right]
+-
+\left[
+\begin{smallmatrix}{\mu_i}\\{\mu_{i+1}}
+\end{smallmatrix}
+\right])
+\tag{15}
 \end{equation}
 where ${t_i}$<${\tau}$ < ${t_{i+1}}$, i = 0 ,..., N. This is because only the
 ${(i)^{th}}$ and ${(i+1)^{th}}$ block columns of ${\mathcal{K}(\tau)}$ ${\mathcal{K}^{-1}}$are non-zero:
