@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title></title>
+    <url>%2F2019%2F10%2F08%2Frobotsp%20conclusion%2F</url>
+    <content type="text"><![CDATA[line 57:设置六个关节初始角度 def repr 帮助显示函数属性 def str 帮忙打印函数属性 xrange生成若干个数]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[机器人学公式推导]]></title>
+    <url>%2F2019%2F10%2F08%2F%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%8E%A8%E5%AF%BC%2F</url>
+    <content type="text"><![CDATA[由一阶线性微分方程$\dot{x}(t)=ax(t)$可得$x(t)=e^{at}x_0$,对$e^{at}$利用泰勒公式展开可得$e^{at}=1+at+{(at)^2}/2!+{(at)^3}/3!+\cdots$，代入线性微分方程的解中可以得到$x(t)=(1+at+{(at)^2}/2!+{(at)^3}/3!+\cdots)x_0$。 由此实数a用矩阵A代替，得$x(t)=(I+At+{(At)^2}/2!+{(At)^3}/3!+\cdots)x_0$，公式两侧对t进行求导可得$$\begin{aligned} \dot{x}(t) &amp;=\left(\frac{d}{d t} e^{A t}\right) x_{0} \ &amp;=\frac{d}{d t}\left(I+A t+\frac{A^{2} t^{2}}{2 !}+\frac{A^{3} t^{3}}{3 !}+\cdots\right) x_{0} \ &amp;=\left(A+A^{2} t+\frac{A^{3} t^{2}}{2 !}+\cdots\right) x_{0} \ &amp;=A e^{A t} x_{0} \ &amp;=A x(t) \end{aligned}$$由此可以证明$x(t)=e^{At}x_0$。 对于任意的矩阵A和标量t，都存在$Ae^{At}=e^{At}A$,由此可以推导出$\dot{x}(t)=e^{A t} A x_{0}$。因为$e^{At}$是无穷级数，因此通常在使用时将其转化为近似形式的表达式子更为可行。例如，将A用$A=P D P^{-1}$表示并带入$e^{At}$的泰勒展开式中可以得到如下等式。$$\begin{aligned} e^{A t} &amp;=I+A t+\frac{(A t)^{2}}{2 !}+\cdots \ &amp;=I+\left(P D P^{-1}\right) t+\left(P D P^{-1}\right)\left(P D P^{-1}\right) \frac{t^{2}}{2 !}+\cdots \ &amp;=P\left(I+D t+\frac{(D t)^{2}}{2 !}+\cdots\right) P^{-1} \ &amp;=P e^{D t} P^{-1} \end{aligned}$$]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[Hello World]]></title>
     <url>%2F2019%2F09%2F25%2Fhello-world%2F</url>
     <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>

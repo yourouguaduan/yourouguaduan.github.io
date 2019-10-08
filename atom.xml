@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yourouguaduan.github.com/child/"/>
-  <updated>2019-08-18T09:12:53.874Z</updated>
+  <updated>2019-10-07T13:42:41.424Z</updated>
   <id>http://yourouguaduan.github.com/child/</id>
   
   <author>
@@ -15,6 +15,52 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://yourouguaduan.github.com/child/2019/10/08/robotsp%20conclusion/"/>
+    <id>http://yourouguaduan.github.com/child/2019/10/08/robotsp conclusion/</id>
+    <published>2019-10-08T11:42:26.360Z</published>
+    <updated>2019-10-07T13:42:41.424Z</updated>
+    
+    <content type="html"><![CDATA[<p>line 57:设置六个关节初始角度</p><p>def <strong>repr</strong> 帮助显示函数属性</p><p>def <strong>str</strong> 帮忙打印函数属性</p><p>xrange生成若干个数</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;line 57:设置六个关节初始角度&lt;/p&gt;
+&lt;p&gt;def &lt;strong&gt;repr&lt;/strong&gt; 帮助显示函数属性&lt;/p&gt;
+&lt;p&gt;def &lt;strong&gt;str&lt;/strong&gt; 帮忙打印函数属性&lt;/p&gt;
+&lt;p&gt;xrange生成若干个数&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>机器人学公式推导</title>
+    <link href="http://yourouguaduan.github.com/child/2019/10/08/%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%8E%A8%E5%AF%BC/"/>
+    <id>http://yourouguaduan.github.com/child/2019/10/08/机器人学公式推导/</id>
+    <published>2019-10-08T01:34:57.000Z</published>
+    <updated>2019-10-08T06:38:22.329Z</updated>
+    
+    <content type="html"><![CDATA[<p>由一阶线性微分方程$\dot{x}(t)=ax(t)$可得$x(t)=e^{at}x_0$,对$e^{at}$利用泰勒公式展开可得$e^{at}=1+at+{(at)^2}/2!+{(at)^3}/3!+\cdots$，代入线性微分方程的解中可以得到$x(t)=(1+at+{(at)^2}/2!+{(at)^3}/3!+\cdots)x_0$。</p><p>由此实数a用矩阵A代替，得$x(t)=(I+At+{(At)^2}/2!+{(At)^3}/3!+\cdots)x_0$，公式两侧对t进行求导可得<br>$$<br>\begin{aligned} \dot{x}(t) &amp;=\left(\frac{d}{d t} e^{A t}\right) x_{0} \ &amp;=\frac{d}{d t}\left(I+A t+\frac{A^{2} t^{2}}{2 !}+\frac{A^{3} t^{3}}{3 !}+\cdots\right) x_{0} \ &amp;=\left(A+A^{2} t+\frac{A^{3} t^{2}}{2 !}+\cdots\right) x_{0} \ &amp;=A e^{A t} x_{0} \ &amp;=A x(t) \end{aligned}<br>$$<br>由此可以证明$x(t)=e^{At}x_0$。</p><a id="more"></a><p>对于任意的矩阵A和标量t，都存在$Ae^{At}=e^{At}A$,由此可以推导出$\dot{x}(t)=e^{A t} A x_{0}$。因为$e^{At}$是无穷级数，因此通常在使用时将其转化为近似形式的表达式子更为可行。例如，将A用$A=P D P^{-1}$表示并带入$e^{At}$的泰勒展开式中可以得到如下等式。<br>$$<br>\begin{aligned} e^{A t} &amp;=I+A t+\frac{(A t)^{2}}{2 !}+\cdots \ &amp;=I+\left(P D P^{-1}\right) t+\left(P D P^{-1}\right)\left(P D P^{-1}\right) \frac{t^{2}}{2 !}+\cdots \ &amp;=P\left(I+D t+\frac{(D t)^{2}}{2 !}+\cdots\right) P^{-1} \ &amp;=P e^{D t} P^{-1} \end{aligned}<br>$$</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;由一阶线性微分方程$\dot{x}(t)=ax(t)$可得$x(t)=e^{at}x_0$,对$e^{at}$利用泰勒公式展开可得$e^{at}=1+at+{(at)^2}/2!+{(at)^3}/3!+\cdots$，代入线性微分方程的解中可以得到$x(t)=(1+at+{(at)^2}/2!+{(at)^3}/3!+\cdots)x_0$。&lt;/p&gt;
+&lt;p&gt;由此实数a用矩阵A代替，得$x(t)=(I+At+{(At)^2}/2!+{(At)^3}/3!+\cdots)x_0$，公式两侧对t进行求导可得&lt;br&gt;$$&lt;br&gt;\begin{aligned} \dot{x}(t) &amp;amp;=\left(\frac{d}{d t} e^{A t}\right) x_{0} \ &amp;amp;=\frac{d}{d t}\left(I+A t+\frac{A^{2} t^{2}}{2 !}+\frac{A^{3} t^{3}}{3 !}+\cdots\right) x_{0} \ &amp;amp;=\left(A+A^{2} t+\frac{A^{3} t^{2}}{2 !}+\cdots\right) x_{0} \ &amp;amp;=A e^{A t} x_{0} \ &amp;amp;=A x(t) \end{aligned}&lt;br&gt;$$&lt;br&gt;由此可以证明$x(t)=e^{At}x_0$。&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
