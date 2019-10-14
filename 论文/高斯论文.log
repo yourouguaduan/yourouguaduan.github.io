@@ -1,25 +1,22 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2019.7.24)  19 SEP 2019 22:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930) (preloaded format=latex 2019.10.14)  14 OCT 2019 09:34
 entering extended mode
- restricted \write18 enabled.
- %&-line parsing enabled.
-**高斯论文.tex
-(./高斯论文.tex
-LaTeX2e <2016/02/01>
-Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
-(/usr/share/texlive/texmf-dist/tex/latex/IEEEtran/IEEEtran.cls
+**./高斯论文.tex
+(高斯论文.tex
+LaTeX2e <2018-12-01>
+(/home/lmy/.miktex/texmfs/install/tex/latex/ieeetran/IEEEtran.cls
 Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
 -- See the "IEEEtran_HOWTO" manual for usage information.
 -- http://www.michaelshell.org/tex/ieeetran/
 \@IEEEtrantmpdimenA=\dimen102
 \@IEEEtrantmpdimenB=\dimen103
 \@IEEEtrantmpdimenC=\dimen104
-\@IEEEtrantmpcountA=\count79
-\@IEEEtrantmpcountB=\count80
-\@IEEEtrantmpcountC=\count81
+\@IEEEtrantmpcountA=\count80
+\@IEEEtrantmpcountB=\count81
+\@IEEEtrantmpcountC=\count82
 \@IEEEtrantmptoksA=\toks14
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 503.
 
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+(/usr/local/share/miktex-texmf/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 -- Using 8.5in x 11in (letter) paper.
@@ -91,72 +88,72 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
 \IEEEiednormlabelsep=\dimen118
 \IEEEiedmathlabelsep=\dimen119
 \IEEEiedtopsep=\skip41
-\c@section=\count82
-\c@subsection=\count83
-\c@subsubsection=\count84
-\c@paragraph=\count85
-\c@IEEEsubequation=\count86
+\c@section=\count83
+\c@subsection=\count84
+\c@subsubsection=\count85
+\c@paragraph=\count86
+\c@IEEEsubequation=\count87
 \abovecaptionskip=\skip42
 \belowcaptionskip=\skip43
-\c@figure=\count87
-\c@table=\count88
-\@IEEEeqnnumcols=\count89
-\@IEEEeqncolcnt=\count90
-\@IEEEsubeqnnumrollback=\count91
+\c@figure=\count88
+\c@table=\count89
+\@IEEEeqnnumcols=\count90
+\@IEEEeqncolcnt=\count91
+\@IEEEsubeqnnumrollback=\count92
 \@IEEEquantizeheightA=\dimen120
 \@IEEEquantizeheightB=\dimen121
 \@IEEEquantizeheightC=\dimen122
 \@IEEEquantizeprevdepth=\dimen123
-\@IEEEquantizemultiple=\count92
-\@IEEEquantizeboxA=\box26
+\@IEEEquantizemultiple=\count93
+\@IEEEquantizeboxA=\box27
 \@IEEEtmpitemindent=\dimen124
 \IEEEPARstartletwidth=\dimen125
-\c@IEEEbiography=\count93
-\@IEEEtranrubishbin=\box27
-) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2016/03/03 v2.15a AMS math features
+\c@IEEEbiography=\count94
+\@IEEEtranrubishbin=\box28
+) (/usr/local/share/miktex-texmf/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2018/12/01 v2.17b AMS math features
 \@mathmargin=\skip44
 
 For additional information on amsmath, use the `?' option.
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/local/share/miktex-texmf/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+(/usr/local/share/miktex-texmf/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks15
 \ex@=\dimen126
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+(/usr/local/share/miktex-texmf/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen127
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
-Package: amsopn 1999/12/14 v2.01 operator names
+(/usr/local/share/miktex-texmf/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count94
-LaTeX Info: Redefining \frac on input line 199.
-\uproot@=\count95
-\leftroot@=\count96
-LaTeX Info: Redefining \overline on input line 297.
-\classnum@=\count97
-\DOTSCASE@=\count98
-LaTeX Info: Redefining \ldots on input line 394.
-LaTeX Info: Redefining \dots on input line 397.
-LaTeX Info: Redefining \cdots on input line 518.
-\Mathstrutbox@=\box28
-\strutbox@=\box29
+\inf@bad=\count95
+LaTeX Info: Redefining \frac on input line 223.
+\uproot@=\count96
+\leftroot@=\count97
+LaTeX Info: Redefining \overline on input line 385.
+\classnum@=\count98
+\DOTSCASE@=\count99
+LaTeX Info: Redefining \ldots on input line 482.
+LaTeX Info: Redefining \dots on input line 485.
+LaTeX Info: Redefining \cdots on input line 606.
+\Mathstrutbox@=\box29
+\strutbox@=\box30
 \big@size=\dimen128
-LaTeX Font Info:    Redeclaring font encoding OML on input line 630.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
-\macc@depth=\count99
-\c@MaxMatrixCols=\count100
+LaTeX Font Info:    Redeclaring font encoding OML on input line 729.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
+\macc@depth=\count100
+\c@MaxMatrixCols=\count101
 \dotsspace@=\muskip10
-\c@parentequation=\count101
-\dspbrk@lvl=\count102
+\c@parentequation=\count102
+\dspbrk@lvl=\count103
 \tag@help=\toks16
-\row@=\count103
-\column@=\count104
-\maxfields@=\count105
+\row@=\count104
+\column@=\count105
+\maxfields@=\count106
 \andhelp@=\toks17
 \eqnshift@=\dimen129
 \alignsep@=\dimen130
@@ -168,55 +165,46 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
 \multlinegap=\skip45
 \multlinetaggap=\skip46
 \mathdisplay@stack=\toks19
-LaTeX Info: Redefining \[ on input line 2735.
-LaTeX Info: Redefining \] on input line 2736.
+LaTeX Info: Redefining \[ on input line 2844.
+LaTeX Info: Redefining \] on input line 2845.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/local/share/miktex-texmf/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+(/usr/local/share/miktex-texmf/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty
-Package: bm 2014/10/28 v1.1c Bold Symbol Support (DPC/FMi)
+(/usr/local/share/miktex-texmf/tex/latex/tools/bm.sty
+Package: bm 2017/01/16 v1.2c Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup6
 \symboldletters=\mathgroup7
 \symboldsymbols=\mathgroup8
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
 LaTeX Info: Redefining \bm on input line 207.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
-Invalid UTF-8 byte or sequence at line 275 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 290 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 540 replaced by U+FFFD.
-Package: algorithm2e 2013/01/06 v5.00 algorithms environments
-\c@AlgoLine=\count106
+(/home/lmy/.miktex/texmfs/install/tex/latex/algorithm2e/algorithm2e.sty
+Package: algorithm2e 2017/07/18 v5.2 algorithms environments
+\c@AlgoLine=\count107
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+(/usr/local/share/miktex-texmf/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-Invalid UTF-8 byte or sequence at line 1311 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 1313 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 1315 replaced by U+FFFD.
 \algocf@hangindent=\skip47
 
-(/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
+(/home/lmy/.miktex/texmfs/install/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count108
+)
+(/usr/local/share/miktex-texmf/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty
+(/home/lmy/.miktex/texmfs/install/tex/latex/relsize/relsize.sty
 Package: relsize 2013/03/29 ver 4.1
 )
-********************************************************
-Package `algorithm2e' Release 5.1 -- october 19 2015 --
-- algorithm2e-announce@lirmm.fr mailing list for announcement about releases
-- algorithm2e-discussion@lirmm.fr mailing list for discussion about package
-subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
-- Author: Christophe Fiorio (christophe.fiorio@umontpellier.fr)
-********************************************************
 \skiptotal=\skip48
 \skiplinenumber=\skip49
 \skiprule=\skip50
@@ -232,60 +220,62 @@ subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
 \interspacealgoruled=\dimen139
 \interspacetitleboxruled=\dimen140
 \algocf@ruledwidth=\skip56
-\algocf@inoutbox=\box30
-\algocf@inputbox=\box31
+\algocf@inoutbox=\box31
+\algocf@inputbox=\box32
 \AlCapSkip=\skip57
 \AlCapHSkip=\skip58
 \algoskipindent=\skip59
-\algocf@nlbox=\box32
-\algocf@hangingbox=\box33
-\algocf@untilbox=\box34
+\algocf@nlbox=\box33
+\algocf@hangingbox=\box34
+\algocf@untilbox=\box35
 \algocf@skipuntil=\skip60
-\algocf@capbox=\box35
-\algoheightruledefault=\skip61
-\algoheightrule=\skip62
-\algotitleheightruledefault=\skip63
-\algotitleheightrule=\skip64
-\c@algocfline=\count107
-\c@algocfproc=\count108
-\c@algocf=\count109
-\algocf@algoframe=\box36
-\algocf@algobox=\box37
-) (/usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+\algocf@capbox=\box36
+\algocf@lcaptionbox=\skip61
+\algoheightruledefault=\skip62
+\algoheightrule=\skip63
+\algotitleheightruledefault=\skip64
+\algotitleheightrule=\skip65
+\c@algocfline=\count109
+\c@algocfproc=\count110
+\c@algocf=\count111
+\algocf@algoframe=\box37
+\algocf@algobox=\box38
+)
+(/home/lmy/.miktex/texmfs/install/tex/latex/algorithmicx/algpseudocode.sty
 Package: algpseudocode 
 
-(/usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+(/home/lmy/.miktex/texmfs/install/tex/latex/algorithmicx/algorithmicx.sty
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
-\c@ALG@line=\count110
-\c@ALG@rem=\count111
-\c@ALG@nested=\count112
-\ALG@tlm=\skip65
-\ALG@thistlm=\skip66
-\c@ALG@Lnr=\count113
-\c@ALG@blocknr=\count114
-\c@ALG@storecount=\count115
-\c@ALG@tmpcounter=\count116
-\ALG@tmplength=\skip67
+\c@ALG@line=\count112
+\c@ALG@rem=\count113
+\c@ALG@nested=\count114
+\ALG@tlm=\skip66
+\ALG@thistlm=\skip67
+\c@ALG@Lnr=\count115
+\c@ALG@blocknr=\count116
+\c@ALG@storecount=\count117
+\c@ALG@tmpcounter=\count118
+\ALG@tmplength=\skip68
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
-) (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
+) (/usr/local/share/miktex-texmf/tex/latex/jknappen/mathrsfs.sty
 Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 \symrsfs=\mathgroup9
 )
-(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+(/home/lmy/.miktex/texmfs/install/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+(/home/lmy/.miktex/texmfs/install/tex/latex/caption/caption.sty
+Package: caption 2019/09/01 v3.3d Customizing captions (AR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2016/02/04 v1.7-139 caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 67.
+(/home/lmy/.miktex/texmfs/install/tex/latex/caption/caption3.sty
+Package: caption3 2019/09/01 v1.8d caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 64.
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+(/usr/local/share/miktex-texmf/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks20
 )
@@ -315,54 +305,49 @@ ormalfont \footnotesize \noindent \unhbox \@tempboxa #2}\else \ifCLASSOPTIONcon
 ference \hbox to\hsize {\normalfont \footnotesize \hfil \box \@tempboxa \hfil }
 \else \hbox to\hsize {\normalfont \footnotesize \box \@tempboxa \hfil }\fi \fi 
 \fi .
-\c@ContinuedFloat=\count117
-) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+\c@caption@flags=\count119
+\c@ContinuedFloat=\count120
+) (/usr/local/share/miktex-texmf/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2016/01/03 v1.0q Standard LaTeX Graphics (DPC,SPQR)
+(/usr/local/share/miktex-texmf/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+(/usr/local/share/miktex-texmf/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
-File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+(/usr/local/share/miktex-texmf/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: xetex.def on input line 95.
+Package graphics Info: Driver file: dvips.def on input line 99.
 
-(/usr/share/texlive/texmf-dist/tex/xelatex/xetex-def/xetex.def
-File: xetex.def 2015/09/11 v4.06 LaTeX color/graphics driver for XeTeX (TeX Liv
-e/RRM/JK)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
-)))
+(/usr/local/share/miktex-texmf/tex/latex/graphics-def/dvips.def
+File: dvips.def 2017/06/20 v3.1d Graphics/color driver for dvips
+))
 \Gin@req@height=\dimen148
 \Gin@req@width=\dimen149
 )
-(/usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty
+(/home/lmy/.miktex/texmfs/install/tex/latex/subfig/subfig.sty
 Package: subfig 2005/06/28 ver: 1.3 subfig package
-\c@KVtest=\count118
-\sf@farskip=\skip68
+\c@KVtest=\count121
+\sf@farskip=\skip69
 \sf@captopadj=\dimen150
-\sf@capskip=\skip69
-\sf@nearskip=\skip70
-\c@subfigure=\count119
-\c@subfigure@save=\count120
-\c@lofdepth=\count121
-\c@subtable=\count122
-\c@subtable@save=\count123
-\c@lotdepth=\count124
-\sf@top=\skip71
-\sf@bottom=\skip72
+\sf@capskip=\skip70
+\sf@nearskip=\skip71
+\c@subfigure=\count122
+\c@subfigure@save=\count123
+\c@lofdepth=\count124
+\c@subtable=\count125
+\c@subtable@save=\count126
+\c@lotdepth=\count127
+\sf@top=\skip72
+\sf@bottom=\skip73
 )
-(/usr/share/texlive/texmf-dist/tex/latex/preprint/balance.sty
+(/home/lmy/.miktex/texmfs/install/tex/latex/preprint/balance.sty
 Package: balance 1999/02/23 4.3 (PWD)
 \oldvsize=\dimen151
-) (./高斯论文.aux
+)
+(高斯论文.aux
 
 LaTeX Warning: Label `ieeetr' multiply defined.
 
@@ -474,142 +459,534 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
 
-Underfull \hbox (badness 4765) in paragraph at lines 19--19
-[][][]\OT1/ptm/m/n/8 Mustafa Mukadam, Xinyan Yan, and By-ron Boots are af-fil-i
--ated
+Underfull \hbox (badness 2080) in paragraph at lines 19--19
+\OT1/ptm/m/n/8 the Institute for Robotics and Intelligent Machines, Georgia Ins
+titute
  []
 
-Missing character: There is no – in font ptmr7t!
-Missing character: There is no – in font ptmr7t!
+
+Underfull \hbox (badness 6364) in paragraph at lines 19--19
+\OT1/ptm/m/n/8 of Technology, Atlanta, GA 30332, USA. mmukadam3@gatech.edu
+ []
+
+
+Underfull \hbox (badness 6016) in paragraph at lines 36--37
+[]\OT1/ptm/b/it/10 Abstract\OT1/ptm/b/n/10 -Motion planning is a fundamental to
+ol
+ []
+
+
+Underfull \hbox (badness 2111) in paragraph at lines 36--37
+\OT1/ptm/b/n/10 in robotics, used to generate collision-free, smooth,
+ []
+
+
+Underfull \hbox (badness 1430) in paragraph at lines 45--65
+\OT1/ptm/m/n/10 trajectory optimization and related problems. Khatib [1]
+ []
+
 LaTeX Font Info:    Try loading font information for U+msa on input line 98.
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+(/usr/local/share/miktex-texmf/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 98.
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+(/usr/local/share/miktex-texmf/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for U+rsfs on input line 98.
 
-(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
+(/usr/local/share/miktex-texmf/tex/latex/jknappen/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-) [1
+)
+Underfull \hbox (badness 1859) in paragraph at lines 101--110
+\OT1/ptm/m/n/10 of joints), and R is the number of variables in each
+ []
+
+[1
 
 
 ]
-Missing character: There is no “ in font ptmr7t!
-Missing character: There is no ” in font ptmr7t!
- [2] [3]
+Underfull \hbox (badness 5359) in paragraph at lines 117--121
+\OT1/ptm/m/n/10 where $\OML/cmm/m/it/10 \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT
+1/cmr/m/n/10 )$ \OT1/ptm/m/n/10 is a vector-valued mean function whose
+ []
+
+
+Underfull \hbox (badness 6625) in paragraph at lines 133--136
+[]\OT1/ptm/m/n/10 Reasoning about trajectories with GPs has several
+ []
+
+
+Underfull \hbox (badness 6047) in paragraph at lines 133--136
+\OT1/ptm/m/n/10 on the space of trajectories. Given a fixed set of
+ []
+
+
+Underfull \hbox (badness 5490) in paragraph at lines 184--188
+\OT1/ptm/m/n/10 After considering the end state $\OML/cmm/m/it/10 []$\OT1/ptm/
+m/n/10 as a noise-free
+ []
+
+[2]
+Underfull \hbox (badness 2057) in paragraph at lines 278--285
+[]\OT1/ptm/m/n/10 The usual goal of trajectory optimization is to find
+ []
+
+[3]
 
 Package amsmath Warning: Cannot use `split' here;
 (amsmath)                trying to recover with `aligned' on input line 473.
 
-File: 论文1.png Graphic file (type QTm)
-<use  "论文1.png" >
-Underfull \vbox (badness 1796) has occurred while \output is active []
+
+Underfull \hbox (badness 1675) in paragraph at lines 476--479
+\OT1/ptm/m/n/10 For example, if we want to upsample a trajectory by
+ []
+
+! Undefined control sequence.
+\GenericError  ...                                
+                                                    #4  \errhelp \@err@     ...
+l.510 \includegraphics[scale=0.3]{论文1}
+                                          
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\GenericError  ...                                
+                                                  \let \@err@               ...
+l.510 \includegraphics[scale=0.3]{论文1}
+                                          
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\GenericError  ...                                
+                                                  \@empty \def \MessageBreak...
+l.510 \includegraphics[scale=0.3]{论文1}
+                                          
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\GenericError  ...                                
+                                                     \endgroup 
+l.510 \includegraphics[scale=0.3]{论文1}
+                                          
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\GenericError  ...                                
+                                                    #4  \errhelp \@err@     ...
+l.510 \includegraphics[scale=0.3]{论文1}
+                                          
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\GenericError  ...                                
+                                                  \let \@err@               ...
+l.510 \includegraphics[scale=0.3]{论文1}
+                                          
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\GenericError  ...                                
+                                                  \@empty \def \MessageBreak...
+l.510 \includegraphics[scale=0.3]{论文1}
+                                          
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\GenericError  ...                                
+                                                     \endgroup 
+l.510 \includegraphics[scale=0.3]{论文1}
+                                          
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.510 \includegraphics[scale=0.3]{论文1}
+                                          
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing { inserted.
+<to be read again> 
+                   \let 
+l.510 \includegraphics[scale=0.3]{论文1}
+                                          
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! You can't use `\hrule' here except with leaders.
+\caption@hrule ->\hrule 
+                        \@height \z@ 
+l.516 ...imulation and (d) on the real WAM robot.}
+                                                  
+To put a horizontal rule in an hbox or an alignment,
+you should use \leaders or \hrulefill (see The TeXbook).
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \vskip 
+l.516 ...imulation and (d) on the real WAM robot.}
+                                                  
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \vskip 
+l.516 ...imulation and (d) on the real WAM robot.}
+                                                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.516 ...imulation and (d) on the real WAM robot.}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.516 ...imulation and (d) on the real WAM robot.}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.516 ...imulation and (d) on the real WAM robot.}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Underfull \hbox (badness 5417) in paragraph at lines 502--522
+\OT1/ptm/m/n/10 number of states needed to represent a high-fidelity
+ []
+
+
+Underfull \vbox (badness 1205) has occurred while \output is active []
 
  [4]
 [5]
-File: 论文2.png Graphic file (type QTm)
- <use  "论文2.png" > [6]
-Missing character: There is no “ in font ptmr7t!
-Missing character: There is no ” in font ptmr7t!
-Missing character: There is no – in font ptmr7t!
-Missing character: There is no “ in font ptmr7t!
-Missing character: There is no ” in font ptmr7t!
-Missing character: There is no – in font ptmr7t!
-Missing character: There is no “ in font ptmr7t!
-Missing character: There is no ” in font ptmr7t!
-Missing character: There is no ’ in font ptmri7t!
-Missing character: There is no – in font ptmr7t!
-Missing character: There is no “ in font ptmr7t!
-Missing character: There is no ” in font ptmr7t!
-Missing character: There is no – in font ptmr7t!
-Missing character: There is no “ in font ptmr7t!
-Missing character: There is no ” in font ptmr7t!
-Missing character: There is no – in font ptmr7t!
-Missing character: There is no “ in font ptmr7t!
-Missing character: There is no ” in font ptmr7t!
-Missing character: There is no “ in font ptmr7t!
-Missing character: There is no ” in font ptmr7t!
-Missing character: There is no – in font ptmr7t!
-Missing character: There is no ’ in font ptmr7t!
-Missing character: There is no “ in font ptmr7t!
-Missing character: There is no ” in font ptmr7t!
-Missing character: There is no – in font ptmr7t!
-Missing character: There is no “ in font ptmr7t!
-Missing character: There is no ” in font ptmr7t!
-Missing character: There is no – in font ptmr7t!
-Missing character: There is no “ in font ptmr7t!
-Missing character: There is no ¨ in font ptmr7t!
-Missing character: There is no ” in font ptmr7t!
-Missing character: There is no “ in font ptmr7t!
-Missing character: There is no ” in font ptmr7t!
-Missing character: There is no – in font ptmr7t!
-Missing character: There is no “ in font ptmr7t!
-Missing character: There is no ” in font ptmr7t!
-Missing character: There is no – in font ptmr7t!
-Missing character: There is no “ in font ptmr7t!
-Missing character: There is no ” in font ptmr7t!
-Missing character: There is no – in font ptmr7t!
-Missing character: There is no “ in font ptmr7t!
-Missing character: There is no ” in font ptmr7t!
-Missing character: There is no “ in font ptmr7t!
-Missing character: There is no ” in font ptmr7t!
-Missing character: There is no “ in font ptmr7t!
-Missing character: There is no ” in font ptmr7t!
-Missing character: There is no – in font ptmr7t!
-Missing character: There is no “ in font ptmr7t!
-Missing character: There is no ” in font ptmr7t!
-Missing character: There is no – in font ptmr7t!
-Missing character: There is no “ in font ptmr7t!
-Missing character: There is no ” in font ptmr7t!
-Missing character: There is no – in font ptmr7t!
-Missing character: There is no “ in font ptmr7t!
-Missing character: There is no ” in font ptmr7t!
-Missing character: There is no – in font ptmr7t!
-Missing character: There is no “ in font ptmr7t!
-Missing character: There is no ” in font ptmr7t!
-Missing character: There is no – in font ptmr7t!
-Missing character: There is no “ in font ptmr7t!
-Missing character: There is no ” in font ptmr7t!
-Missing character: There is no “ in font ptmr7t!
-Missing character: There is no ” in font ptmr7t!
-
-Underfull \hbox (badness 2418) in paragraph at lines 797--799
-[]\OT1/ptm/m/n/8 N. Ratliff, An-a-lyt-i-cal dy-nam-ics and con-tact anal-y-sis,
- \OT1/ptm/m/it/8 Avail-able:
+Underfull \hbox (badness 2856) in paragraph at lines 655--663
+\OT1/ptm/m/n/10 solution trajectories (solve more problems) and do so
  []
 
-Missing character: There is no “ in font ptmr7t!
-Missing character: There is no ” in font ptmr7t!
-Missing character: There is no “ in font ptmr7t!
-Missing character: There is no ” in font ptmr7t!
-Missing character: There is no “ in font ptmr7t!
-Missing character: There is no ” in font ptmr7t!
-Missing character: There is no – in font ptmr7t!
-Missing character: There is no “ in font ptmr7t!
-Missing character: There is no ” in font ptmr7t!
-Missing character: There is no – in font ptmr7t!
-Missing character: There is no “ in font ptmr7t!
-Missing character: There is no ” in font ptmr7t!
-Missing character: There is no – in font ptmr7t!
-Missing character: There is no “ in font ptmr7t!
-Missing character: There is no ” in font ptmr7t!
-Missing character: There is no – in font ptmr7t!
-[7] (./高斯论文.aux)
+! Undefined control sequence.
+\GenericError  ...                                
+                                                    #4  \errhelp \@err@     ...
+l.670 \includegraphics[scale=0.4]{论文2}
+                                          
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\GenericError  ...                                
+                                                  \let \@err@               ...
+l.670 \includegraphics[scale=0.4]{论文2}
+                                          
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\GenericError  ...                                
+                                                  \@empty \def \MessageBreak...
+l.670 \includegraphics[scale=0.4]{论文2}
+                                          
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\GenericError  ...                                
+                                                     \endgroup 
+l.670 \includegraphics[scale=0.4]{论文2}
+                                          
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\GenericError  ...                                
+                                                    #4  \errhelp \@err@     ...
+l.670 \includegraphics[scale=0.4]{论文2}
+                                          
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\GenericError  ...                                
+                                                  \let \@err@               ...
+l.670 \includegraphics[scale=0.4]{论文2}
+                                          
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\GenericError  ...                                
+                                                  \@empty \def \MessageBreak...
+l.670 \includegraphics[scale=0.4]{论文2}
+                                          
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\GenericError  ...                                
+                                                     \endgroup 
+l.670 \includegraphics[scale=0.4]{论文2}
+                                          
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.670 \includegraphics[scale=0.4]{论文2}
+                                          
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing { inserted.
+<to be read again> 
+                   \let 
+l.670 \includegraphics[scale=0.4]{论文2}
+                                          
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! You can't use `\hrule' here except with leaders.
+\caption@hrule ->\hrule 
+                        \@height \z@ 
+l.676 }
+       
+To put a horizontal rule in an hbox or an alignment,
+you should use \leaders or \hrulefill (see The TeXbook).
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \vskip 
+l.676 }
+       
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \vskip 
+l.676 }
+       
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.676 }
+       
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.676 }
+       
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.676 }
+       
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Underfull \hbox (badness 1377) in paragraph at lines 676--676
+[]\OT1/ptm/m/n/10 Fig. 2: |Comparison of an example optimized trajectory
+ []
+
+
+Underfull \hbox (badness 2245) in paragraph at lines 664--683
+\OT1/ptm/m/n/10 approach and fails on only one of the problems. By
+ []
+
+
+Underfull \hbox (badness 2460) in paragraph at lines 664--683
+\OT1/ptm/m/n/10 ensuring smoothness. GP interpolation can be used to
+ []
+
+[6]
+Underfull \hbox (badness 3343) in paragraph at lines 715--718
+\OT1/ptm/m/n/8 Gradient optimization techniques for efficient motion planning,"
+
+ []
+
+
+Underfull \hbox (badness 1552) in paragraph at lines 715--718
+\OT1/ptm/m/n/8 in \OT1/ptm/m/it/8 Robotics and Automation, 2009. ICRA'09. IEEE 
+International
+ []
+
+
+Underfull \hbox (badness 1360) in paragraph at lines 719--723
+\OT1/ptm/m/n/8 Hamiltonian optimization for motion planning," \OT1/ptm/m/it/8 T
+he International
+ []
+
+
+! Package inputenc Error: Unicode character ¨ (U+00A8)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.750 ... Seeger, and B. Scholkopf, “Learning ¨
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+Underfull \hbox (badness 1735) in paragraph at lines 754--757
+\OT1/ptm/m/n/8 for robotic manipulators from visual self-perception," \OT1/ptm/
+m/it/8 Journal of
+ []
+
+
+Underfull \hbox (badness 1755) in paragraph at lines 779--782
+\OT1/ptm/m/n/8 Kalman filters with Gaussian process prediction and observation
+ []
+
+
+Underfull \hbox (badness 1817) in paragraph at lines 783--785
+[]\OT1/ptm/m/n/8 C. H. Tong, P. Furgale, and T. D. Barfoot, \Gaussian process
+ []
+
+[7] (高斯论文.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
- ) 
+ )
+(\end occurred when \ifx on line 670 was incomplete)
+(\end occurred when \ifx on line 670 was incomplete)
+(\end occurred when \ifx on line 670 was incomplete)
+(\end occurred when \ifx on line 670 was incomplete)
+(\end occurred when \ifx on line 510 was incomplete)
+(\end occurred when \ifx on line 510 was incomplete)
+(\end occurred when \ifx on line 510 was incomplete)
+(\end occurred when \ifx on line 510 was incomplete) 
 Here is how much of TeX's memory you used:
- 5320 strings out of 493638
- 82844 string characters out of 6146796
- 171792 words of memory out of 5000000
- 8656 multiletter control sequences out of 15000+600000
- 36092 words of font info for 96 fonts, out of 8000000 for 9000
- 1328 hyphenation exceptions out of 8191
- 36i,18n,39p,670b,265s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 5205 strings out of 494859
+ 81805 string characters out of 3178562
+ 177005 words of memory out of 3000000
+ 8809 multiletter control sequences out of 15000+200000
+ 36092 words of font info for 96 fonts, out of 3000000 for 9000
+ 0 hyphenation exceptions out of 8191
+ 36i,18n,39p,704b,267s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on 高斯论文.pdf (7 pages).
+Output written on 高斯论文.dvi (7 pages, 59392 bytes).
