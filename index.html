@@ -481,7 +481,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>由一阶线性微分方程$\dot{x}(t)=ax(t)$可得$x(t)=e^{at}x_0$,对$e^{at}$利用泰勒公式展开可得$e^{at}=1+at+{(at)^2}/2!+{(at)^3}/3!+\cdots$，代入线性微分方程的解中可以得到$x(t)=(1+at+{(at)^2}/2!+{(at)^3}/3!+\cdots)x_0$。</p>
+        <p>一、线性微分方程理论的基本结果</p>
+<p>由一阶线性微分方程$\dot{x}(t)=ax(t)$可得$x(t)=e^{at}x_0$,对$e^{at}$利用泰勒公式展开可得$e^{at}=1+at+{(at)^2}/2!+{(at)^3}/3!+\cdots$，代入线性微分方程的解中可以得到$x(t)=(1+at+{(at)^2}/2!+{(at)^3}/3!+\cdots)x_0$。</p>
 <p>由此实数a用矩阵A代替，得$x(t)=(I+At+{(At)^2}/2!+{(At)^3}/3!+\cdots)x_0$，公式两侧对t进行求导可得<br>$$<br>\begin{aligned} \dot{x}(t) &amp;=\left(\frac{d}{d t} e^{A t}\right) x_{0} \ &amp;=\frac{d}{d t}\left(I+A t+\frac{A^{2} t^{2}}{2 !}+\frac{A^{3} t^{3}}{3 !}+\cdots\right) x_{0} \ &amp;=\left(A+A^{2} t+\frac{A^{3} t^{2}}{2 !}+\cdots\right) x_{0} \ &amp;=A e^{A t} x_{0} \ &amp;=A x(t) \end{aligned}<br>$$<br>由此可以证明$x(t)=e^{At}x_0$。</p>
         
           <a class="article-more-a" href="/2019/10/08/机器人学公式推导/#more">more >></a>
@@ -493,6 +494,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">MR</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -978,11 +990,15 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">latex</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">python</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">latex</a>
+                <a href="javascript:void(0)" class="js-tag color3">MR</a>
               </li>
             
             <div class="clearfix"></div>
