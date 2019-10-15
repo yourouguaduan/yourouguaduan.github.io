@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta name="generator" content="Hexo 3.9.0">
-  <meta charset="utf-8">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
   
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,12 +16,12 @@
 <meta property="og:site_name" content="lin">
 <meta property="og:description" content="一、Python基本语法line 57:设置六个关节初始角度 def repr 帮助显示函数属性 def str 帮忙打印函数属性 xrange生成若干个数 dir()   #  获得当前模块的属性列表 enumerate() 函数用于将一个可遍历的数据对象 os.path.isdir(path)判断路径是否为目录">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="http://yourouguaduan.github.com/child/2019/10/08/robotsp笔记/step1.png">
-<meta property="og:updated_time" content="2019-10-15T11:26:03.829Z">
+<meta property="og:image" content="http://yourouguaduan.github.com/images/robotsp%E7%AC%94%E8%AE%B0/step1.png">
+<meta property="og:updated_time" content="2019-10-15T12:13:30.722Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="robotsp笔记">
 <meta name="twitter:description" content="一、Python基本语法line 57:设置六个关节初始角度 def repr 帮助显示函数属性 def str 帮忙打印函数属性 xrange生成若干个数 dir()   #  获得当前模块的属性列表 enumerate() 函数用于将一个可遍历的数据对象 os.path.isdir(path)判断路径是否为目录">
-<meta name="twitter:image" content="http://yourouguaduan.github.com/child/2019/10/08/robotsp笔记/step1.png">
+<meta name="twitter:image" content="http://yourouguaduan.github.com/images/robotsp%E7%AC%94%E8%AE%B0/step1.png">
   
     <link rel="alternative" href="/atom.xml" title="lin" type="application/atom+xml">
   
@@ -34,7 +34,7 @@
     #container.show {
       background: linear-gradient(200deg,#a0cfe4,#e8c37e);
     }
-  </style>
+  </style><!-- hexo-inject:begin --><!-- hexo-inject:end -->
   
 
   
@@ -42,7 +42,7 @@
 </head>
 </html>
 <body>
-  <div id="container" q-class="show:isCtnShow">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div id="container" q-class="show:isCtnShow">
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
     <div class="left-col" q-class="show:isShow">
       
@@ -220,7 +220,7 @@
 <p>这一过程的伪代码如下方所示</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">\documentclass&#123;article&#125;</span><br><span class="line">\usepackage[ruled,linesnumbered,lined]&#123;algorithm2e&#125;</span><br><span class="line">\usepackage[backend=bibtex,style=verbose-trad2,natbib=true]&#123;biblatex&#125;</span><br><span class="line">\begin&#123;document&#125;</span><br><span class="line">\begin&#123;algorithm&#125;</span><br><span class="line">\caption&#123;Find the ttour&#125;</span><br><span class="line">\label&#123;&#125;</span><br><span class="line">\KwIn&#123;coordinates&#125;</span><br><span class="line">\KwOut&#123;ttour \\Initialization:&#125;</span><br><span class="line"> tgraph $\gets$  FROM\_COORDINATE\_LIST(coordinates)\\</span><br><span class="line"> ttour $\gets$ tsp\_solver(tgraph)\\</span><br><span class="line"> ttour $\gets$ rotate\_tour(ttour)\\</span><br><span class="line"> return ttour</span><br><span class="line">\end&#123;algorithm&#125;</span><br><span class="line">\end&#123;document&#125;</span><br></pre></td></tr></table></figure>
 
-<p><img src="/child/2019/10/08/robotsp笔记/step1.png" alt="step1"></p>
+<p><img src="/images/robotsp%E7%AC%94%E8%AE%B0/step1.png" alt="step1"></p>
 <h3 id="step-2-确定访问任务点的位姿，输出为ctour"><a href="#step-2-确定访问任务点的位姿，输出为ctour" class="headerlink" title="step 2:确定访问任务点的位姿，输出为ctour"></a>step 2:确定访问任务点的位姿，输出为ctour</h3><p>from_sorted_setslist函数中set_sizes表示层数，产生的图为论文中的fig.3，start即为fig.3中的qstart，stop即为fig.3中的qgoal</p>
 <p>这一过程的伪代码如下方所示</p>
 <h3 id="step-3：将ttour和ctour结合，输出配置空间中的轨迹"><a href="#step-3：将ttour和ctour结合，输出配置空间中的轨迹" class="headerlink" title="step 3：将ttour和ctour结合，输出配置空间中的轨迹"></a>step 3：将ttour和ctour结合，输出配置空间中的轨迹</h3><p>这一过程的伪代码如下方所示</p>
@@ -520,6 +520,14 @@ MathJax.Hub.Queue(function() {
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">MR</a>
               </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">电机</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">windows</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
@@ -670,6 +678,6 @@ MathJax.Hub.Queue(function() {
     </div>
 
 </div>
-  </div>
+  </div><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </body>
 </html>
