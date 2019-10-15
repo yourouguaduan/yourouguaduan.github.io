@@ -16,12 +16,12 @@
 <meta property="og:site_name" content="lin">
 <meta property="og:description" content="导言区一、导言区12345678910111213\documentclass&amp;#123;IEEEtran&amp;#125;\title&amp;#123;&amp;#125;\author&amp;#123;&amp;#125;\date&amp;#123;&amp;#125;%根据需求添加，如果不需要时间空白即可\usepackage&amp;#123;amsmath,amssymb,amsfonts&amp;#125;\usepackage&amp;#123;bm&amp;#">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="http://yourouguaduan.github.com/child/2019/10/12/latex模板/lmy/blog/source/_posts/image1.jpg">
-<meta property="og:updated_time" content="2019-10-14T08:49:13.164Z">
+<meta property="og:image" content="http://yourouguaduan.github.com/child/2019/10/12/latex模板/image1.png">
+<meta property="og:updated_time" content="2019-10-15T02:23:13.330Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="latex模板">
 <meta name="twitter:description" content="导言区一、导言区12345678910111213\documentclass&amp;#123;IEEEtran&amp;#125;\title&amp;#123;&amp;#125;\author&amp;#123;&amp;#125;\date&amp;#123;&amp;#125;%根据需求添加，如果不需要时间空白即可\usepackage&amp;#123;amsmath,amssymb,amsfonts&amp;#125;\usepackage&amp;#123;bm&amp;#">
-<meta name="twitter:image" content="http://yourouguaduan.github.com/child/2019/10/12/latex模板/lmy/blog/source/_posts/image1.jpg">
+<meta name="twitter:image" content="http://yourouguaduan.github.com/child/2019/10/12/latex模板/image1.png">
   
     <link rel="alternative" href="/atom.xml" title="lin" type="application/atom+xml">
   
@@ -220,12 +220,12 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">\begin&#123;align&#125;</span><br><span class="line">\end&#123;align&#125;%多行公式带序号的输入方法（每行公式都带有序号），通过&quot;\\&quot;换行如果有几行公式不需要序号可在该行公式后面输入&quot;\notag&quot;</span><br></pre></td></tr></table></figure>
 
 <p>如下图所示</p>
-<p><img src="/child/2019/10/12/latex模板/lmy/blog/source/_posts/image1.jpg" alt="image1"></p>
+<p><img src="/child/2019/10/12/latex模板/image1.png" alt="image1"></p>
 <p>5.</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">#写多行式子且编号放在整个式子中间，每一行通过&quot;\\&quot;分割</span><br><span class="line">\begin&#123;equation&#125;</span><br><span class="line">\begin&#123;split&#125;</span><br><span class="line">\begin&#123;split&#125;</span><br><span class="line">\end&#123;equation&#125;</span><br></pre></td></tr></table></figure>
 
 <p>6.多行式子需要在指定位置对齐时，需要在对齐位置前添加“$”,如下图所示。</p>
-<p>![image2](/home/lmy/blog/source/_posts/2019-08-27 20-13-53屏幕截图.png)</p>
+<p>![image2](2019-08-27 20-13-53屏幕截图.png)</p>
 <p>7.矩阵的输入方法</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">\[</span><br><span class="line">&#123;矩阵的名字&#125;=\begin&#123;&#125;%根据矩阵的类型选择输入内容，输入matrix矩阵无括号，输入pmatrix矩阵有小括号，输入bmatrix矩阵有中括号，Bmatrix矩阵有大括号，vmatrix矩阵有单竖线，Vmatrix矩阵有双竖线</span><br><span class="line">  &amp;  \\%矩阵中用“&amp;”分割列，用“\\”分隔行，使用指令&quot;\dots&quot;添加横向省略号，使用指令“\vdots”添加竖向省略号，使用指令“\ddots”添加斜向右省略号</span><br><span class="line">  \end&#123;&#125;_&#123;n \times n&#125;%与begin中的内容相一致,需要添加角标时可以添加后方指令</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
 
@@ -248,7 +248,7 @@
 
 <pre><code>**如图3所示。**</code></pre><h2 id="8-参考文献的插入"><a href="#8-参考文献的插入" class="headerlink" title="8.参考文献的插入"></a>8.参考文献的插入</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">\begin&#123;thebibliography&#125;&#123;99&#125;    % 99为参考文献最大数目，可自行修改不重要。</span><br><span class="line">\bibitem&#123;c1&#125; + ... + \emph&#123;...&#125; + ...      % \emph&#123;&#125;内容变成斜体。</span><br><span class="line">\bibitem&#123;c2&#125; + ... + \emph&#123;...&#125; + ...</span><br><span class="line">\bibitem&#123;c3&#125; + ... + \emph&#123;...&#125; + ...</span><br><span class="line">\...</span><br><span class="line"></span><br><span class="line">\end&#123;thebibliography&#125;</span><br></pre></td></tr></table></figure>
 
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">\end&#123;document&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="三、结尾"><a href="#三、结尾" class="headerlink" title="三、结尾"></a>三、结尾</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">\end&#123;document&#125;</span><br></pre></td></tr></table></figure>
 
 
       
