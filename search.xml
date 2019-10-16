@@ -57,11 +57,17 @@
     <title><![CDATA[工作记录]]></title>
     <url>%2F2019%2F09%2F25%2F%E5%B7%A5%E4%BD%9C%E8%AE%B0%E5%BD%95%2F</url>
     <content type="text"><![CDATA[一、《ROS机器人开发实践》学习至7.1节，完成在Gazebo环境中对于机器人的模拟仿真。 二、论文翻译与复现1.论文翻译《GPMP》论文阅读至第二部分，第二部分公式较多需要较长时间的阅读理解。 2.论文复现使用texmaker对《GPMP》的复现工作的整体框架已经完成，待完成图片插入，文献引用的工作。 三、github博客完成hexo+github博客的创建工作。 四、slam小车相关任务实现电机的转动功能，搜集关于如何实现小车走s线的相关资料。]]></content>
+      <tags>
+        <tag>工作记录</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[工作记录（2）]]></title>
     <url>%2F2019%2F08%2F26%2F%E5%B7%A5%E4%BD%9C%E8%AE%B0%E5%BD%95%EF%BC%882%EF%BC%89%2F</url>
     <content type="text"><![CDATA[一、《ROS机器人开发实践》学习至8.2节。 二、论文翻译与复现1、论文翻译阅读《GPMP》论文中，公式推导进程较慢。 2、论文复现已完成论文的复现工作，同时整理latex模板中。 三、github博客添加评论和搜索功能 四、slam小车相关工作编写走s形道路的程序中。]]></content>
+      <tags>
+        <tag>工作记录</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[电机转动步骤及相关注意事项]]></title>
