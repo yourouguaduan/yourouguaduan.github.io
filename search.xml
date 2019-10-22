@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[toppra]]></title>
+    <url>%2F2019%2F10%2F22%2Ftoppra%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
     <title><![CDATA[hexo相关]]></title>
     <url>%2F2019%2F10%2F15%2F%E5%A6%82%E4%BD%95%E5%9C%A8%E5%8D%9A%E5%AE%A2%E4%B8%8A%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87%2F</url>
     <content type="text"><![CDATA[一、插入图片适用于我自己的特殊情况，在杨爱萍的方法无效后可以尝试。 1.调整程序配置文件_config.yml 里的post_asset_folder:这个选项设置为True； 2.在source下创建/images文件夹，先把图片xx.jpg/png复制到这个文件夹； 3.最后在xxxx.md中想引入图片时，只需要在xxxx.md中按照markdown的格式引入图片： 二、博客上公式换行用\\\\代替\\]]></content>
