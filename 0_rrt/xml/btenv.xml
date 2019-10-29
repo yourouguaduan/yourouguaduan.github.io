@@ -1,0 +1,67 @@
+<!-- copy from denso_btenv2-6.xml for using with AVPRRT_ORTH3 and a modified bottle -->
+<Environment>
+  <Robot file="densowithbase.xml"></Robot>
+  
+  <!-- <Kinbody file="base.xml"></Kinbody> -->
+
+  <Kinbody name="floor">
+    <Body type="static">
+      <Geom type="box">
+	<extents>2 2 0.05</extents>
+	<Translation>0 0 -0.05</Translation>
+      </Geom>
+    </Body>
+  </Kinbody>
+
+  <Kinbody name="box1">
+    <!-- side wall -->
+    <Body type="static">
+      <Geom type="box">
+	<extents>0.05 0.3 0.695</extents>
+	<diffusecolor>1.00 0.2745 0.1608</diffusecolor>
+      </Geom>
+    </Body>
+  </Kinbody>
+
+  <Kinbody name="box2">
+    <!-- upper edge of the opening -->
+    <Body type="static">
+      <Geom type="box">
+	<extents>0.05 0.715 0.2</extents>
+	<diffusecolor>1.00 0.2745 0.1608</diffusecolor>
+      </Geom>
+    </Body>
+  </Kinbody>
+
+  <Kinbody name="box3">
+    <!-- lower edge of the opening -->
+    <Body type="static">
+      <Geom type="box">
+	<extents>0.05 0.375 0.455</extents>
+	<diffusecolor>1.00 0.2745 0.1608</diffusecolor>
+      </Geom>
+    </Body>
+  </Kinbody>
+
+  <Kinbody name="box4">
+    <Body type="static">
+      <Geom type="box">
+	<extents>0.05 0.329 0.15</extents>
+	<diffusecolor>1.00 0.2745 0.1608</diffusecolor>
+      </Geom>
+    </Body>
+  </Kinbody>
+
+  <Kinbody name="box5">
+    <!-- side edge of the opening -->
+    <Body type="static">
+      <Geom type="box">
+	<extents>0.05 0.124 0.4</extents>
+	<diffusecolor>1.00 0.2745 0.1608</diffusecolor>
+      </Geom>
+    </Body>
+  </Kinbody>
+
+
+
+</Environment>

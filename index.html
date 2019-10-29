@@ -158,6 +158,80 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-interpolator" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/10/27/interpolator/">interpolator</a>
+    </h1>
+  
+
+        
+        <a href="/2019/10/27/interpolator/" class="archive-article-date">
+  	<time datetime="2019-10-27T02:53:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-27</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="一、Python语法"><a href="#一、Python语法" class="headerlink" title="一、Python语法"></a>一、Python语法</h1><h2 id="1-Python-super（）函数"><a href="#1-Python-super（）函数" class="headerlink" title="1.Python super（）函数"></a>1.Python super（）函数</h2><p>super() 函数是用于调用父类(超类)的一个方法，用于解决多重继承问题。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">toppra</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/10/27/interpolator/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-toppra" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -165,7 +239,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/22/toppra/">toppra</a>
+      <a class="article-title" href="/2019/10/22/toppra/">toppra1-例程</a>
     </h1>
   
 
@@ -178,7 +252,13 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h2 id="1-kinematics-duration-py→A-simple-example"><a href="#1-kinematics-duration-py→A-simple-example" class="headerlink" title="1.kinematics_duration.py→A simple example"></a>1.kinematics_duration.py→A simple example</h2><h3 id="①速度约束"><a href="#①速度约束" class="headerlink" title="①速度约束"></a>①速度约束</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">vlim_ = np.random.rand(dof) * 20</span><br><span class="line">vlim_ = np.random.rand(dof) * 20</span><br><span class="line">pc_vel = constraint.JointVelocityConstraint(vlim)#输出关节速度约束</span><br></pre></td></tr></table></figure>
+
+<h3 id="②加速度约束"><a href="#②加速度约束" class="headerlink" title="②加速度约束"></a>②加速度约束</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">alim_ = np.random.rand(dof) * 2</span><br><span class="line">alim = np.vstack((-alim_, alim_)).T</span><br><span class="line">pc_acc = constraint.JointAccelerationConstraint(</span><br><span class="line">        alim, discretization_scheme=constraint.DiscretizationType.Interpolation)#输出关节加速度约束</span><br></pre></td></tr></table></figure>
+
+<h3 id="③计算经过100点的时候的时间以及每个点的位姿"><a href="#③计算经过100点的时候的时间以及每个点的位姿" class="headerlink" title="③计算经过100点的时候的时间以及每个点的位姿"></a>③计算经过100点的时候的时间以及每个点的位姿</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ts_sample = np.linspace(0, jnt_traj.get_duration(), 100)</span><br><span class="line">qs_sample = jnt_traj.evaldd(ts_sample)</span><br></pre></td></tr></table></figure>
+
+
       
 
       
@@ -841,82 +921,6 @@
 
 
   
-    <article id="post-工作记录（2）" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/26/工作记录（2）/">工作记录（2）</a>
-    </h1>
-  
-
-        
-        <a href="/2019/08/26/工作记录（2）/" class="archive-article-date">
-  	<time datetime="2019-08-26T01:44:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-26</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="一、《ROS机器人开发实践》"><a href="#一、《ROS机器人开发实践》" class="headerlink" title="一、《ROS机器人开发实践》"></a>一、《ROS机器人开发实践》</h1><p>学习至8.2节。</p>
-        
-          <a class="article-more-a" href="/2019/08/26/工作记录（2）/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">工作记录</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/08/26/工作记录（2）/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
       <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
@@ -1035,7 +1039,7 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">python</a>
+                <a href="javascript:void(0)" class="js-tag color2">toppra</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1043,11 +1047,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">windows</a>
+                <a href="javascript:void(0)" class="js-tag color2">python</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">MR</a>
+                <a href="javascript:void(0)" class="js-tag color3">windows</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1060,6 +1064,10 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">电机</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">MR</a>
               </li>
             
             <div class="clearfix"></div>

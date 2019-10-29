@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yourouguaduan.github.com/child/"/>
-  <updated>2019-10-22T07:03:14.526Z</updated>
+  <updated>2019-10-27T02:56:28.999Z</updated>
   <id>http://yourouguaduan.github.com/child/</id>
   
   <author>
@@ -17,13 +17,44 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>toppra</title>
+    <title>interpolator</title>
+    <link href="http://yourouguaduan.github.com/child/2019/10/27/interpolator/"/>
+    <id>http://yourouguaduan.github.com/child/2019/10/27/interpolator/</id>
+    <published>2019-10-27T02:53:10.000Z</published>
+    <updated>2019-10-27T02:56:28.999Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="一、Python语法"><a href="#一、Python语法" class="headerlink" title="一、Python语法"></a>一、Python语法</h1><h2 id="1-Python-super（）函数"><a href="#1-Python-super（）函数" class="headerlink" title="1.Python super（）函数"></a>1.Python super（）函数</h2><p>super() 函数是用于调用父类(超类)的一个方法，用于解决多重继承问题。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;一、Python语法&quot;&gt;&lt;a href=&quot;#一、Python语法&quot; class=&quot;headerlink&quot; title=&quot;一、Python语法&quot;&gt;&lt;/a&gt;一、Python语法&lt;/h1&gt;&lt;h2 id=&quot;1-Python-super（）函数&quot;&gt;&lt;a href=&quot;#1-P
+      
+    
+    </summary>
+    
+    
+    
+      <category term="toppra" scheme="http://yourouguaduan.github.com/child/tags/toppra/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>toppra1-例程</title>
     <link href="http://yourouguaduan.github.com/child/2019/10/22/toppra/"/>
     <id>http://yourouguaduan.github.com/child/2019/10/22/toppra/</id>
     <published>2019-10-22T07:03:14.000Z</published>
-    <updated>2019-10-22T07:03:14.526Z</updated>
+    <updated>2019-10-24T13:10:09.916Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="1-kinematics-duration-py→A-simple-example"><a href="#1-kinematics-duration-py→A-simple-example" class="headerlink" title="1.kinematics_duration.py→A simple example"></a>1.kinematics_duration.py→A simple example</h2><h3 id="①速度约束"><a href="#①速度约束" class="headerlink" title="①速度约束"></a>①速度约束</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">vlim_ = np.random.rand(dof) * 20</span><br><span class="line">vlim_ = np.random.rand(dof) * 20</span><br><span class="line">pc_vel = constraint.JointVelocityConstraint(vlim)#输出关节速度约束</span><br></pre></td></tr></table></figure><h3 id="②加速度约束"><a href="#②加速度约束" class="headerlink" title="②加速度约束"></a>②加速度约束</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">alim_ = np.random.rand(dof) * 2</span><br><span class="line">alim = np.vstack((-alim_, alim_)).T</span><br><span class="line">pc_acc = constraint.JointAccelerationConstraint(</span><br><span class="line">        alim, discretization_scheme=constraint.DiscretizationType.Interpolation)#输出关节加速度约束</span><br></pre></td></tr></table></figure><h3 id="③计算经过100点的时候的时间以及每个点的位姿"><a href="#③计算经过100点的时候的时间以及每个点的位姿" class="headerlink" title="③计算经过100点的时候的时间以及每个点的位姿"></a>③计算经过100点的时候的时间以及每个点的位姿</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ts_sample = np.linspace(0, jnt_traj.get_duration(), 100)</span><br><span class="line">qs_sample = jnt_traj.evaldd(ts_sample)</span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;1-kinematics-duration-py→A-simple-example&quot;&gt;&lt;a href=&quot;#1-kinematics-duration-py→A-simple-example&quot; class=&quot;headerlink&quot; title=&quot;1.kinemati
+      
     
     </summary>
     
@@ -155,9 +186,9 @@
     <link href="http://yourouguaduan.github.com/child/2019/10/08/%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%8E%A8%E5%AF%BC/"/>
     <id>http://yourouguaduan.github.com/child/2019/10/08/机器人学公式推导/</id>
     <published>2019-10-08T01:34:57.000Z</published>
-    <updated>2019-10-15T13:03:37.111Z</updated>
+    <updated>2019-10-22T13:50:20.554Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="一、线性微分方程理论的基本结果"><a href="#一、线性微分方程理论的基本结果" class="headerlink" title="一、线性微分方程理论的基本结果"></a>一、线性微分方程理论的基本结果</h1><p>由一阶线性微分方程$\dot{x}(t)=ax(t)$可得$x(t)=e^{at}x_0$,对$e^{at}$利用泰勒公式展开可得$e^{at}=1+at+{(at)^2}/2!+{(at)^3}/3!+\cdots$，代入线性微分方程的解中可以得到$x(t)=(1+at+{(at)^2}/2!+{(at)^3}/3!+\cdots)x_0$。</p><p>由此实数a用矩阵A代替，得$x(t)=(I+At+{(At)^2}/2!+{(At)^3}/3!+\cdots)x_0$，公式两侧对t进行求导可得<br>$$<br>\begin{aligned} \dot{x}(t) &amp;=\left(\frac{d}{d t} e^{A t}\right) x_{0} \\ &amp;=\frac{d}{d t}\left(I+A t+\frac{A^{2} t^{2}}{2 !}+\frac{A^{3} t^{3}}{3 !}+\cdots\right) x_{0} \\ &amp;=\left(A+A^{2} t+\frac{A^{3} t^{2}}{2 !}+\cdots\right) x_{0} \\ &amp;=A e^{A t} x_{0} \\ &amp;=A x(t) \end{aligned}<br>$$<br>由此可以证明$x(t)=e^{At}x_0$。</p><a id="more"></a><p>对于任意的矩阵A和标量t，都存在$Ae^{At}=e^{At}A$,由此可以推导出$\dot{x}(t)=e^{A t} A x_{0}$。因为$e^{At}$是无穷级数，因此通常在使用时将其转化为近似形式的表达式子更为可行。例如，将A用$A=P D P^{-1}$表示并带入$e^{At}$的泰勒展开式中可以得到如下等式。<br>$$<br>\begin{aligned} e^{A t} &amp;=I+A t+\frac{(A t)^{2}}{2 !}+\cdots \\ &amp;=I+\left(P D P^{-1}\right) t+\left(P D P^{-1}\right)\left(P D P^{-1}\right) \frac{t^{2}}{2 !}+\cdots \\ &amp;=P\left(I+D t+\frac{(D t)^{2}}{2 !}+\cdots\right) P^{-1} \\ &amp;=P e^{D t} P^{-1} \end{aligned}<br>$$</p><h1 id="二、旋转指数坐标"><a href="#二、旋转指数坐标" class="headerlink" title="二、旋转指数坐标"></a>二、旋转指数坐标</h1><p>旋转的指数坐标可以等效地视为一个单位旋转轴$\hat{\omega}\left(\hat{\omega} \in \mathbb{R}^{3},|\hat{\omega}|=1\right)$和绕该轴旋转角度$\theta \in \mathbb{R}$或者也可以等效的视为将两者相乘得到的三维向量$\hat{\omega} \theta \in \mathbb{R}^{3}$</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="一、线性微分方程理论的基本结果"><a href="#一、线性微分方程理论的基本结果" class="headerlink" title="一、线性微分方程理论的基本结果"></a>一、线性微分方程理论的基本结果</h1><p>由一阶线性微分方程$\dot{x}(t)=ax(t)$可得$x(t)=e^{at}x_0$,对$e^{at}$利用泰勒公式展开可得$e^{at}=1+at+{(at)^2}/2!+{(at)^3}/3!+\cdots$，代入线性微分方程的解中可以得到$x(t)=(1+at+{(at)^2}/2!+{(at)^3}/3!+\cdots)x_0$。</p><p>由此实数a用矩阵A代替，得$x(t)=(I+At+{(At)^2}/2!+{(At)^3}/3!+\cdots)x_0$，公式两侧对t进行求导可得<br>$$<br>\begin{aligned} \dot{x}(t) &amp;=\left(\frac{d}{d t} e^{A t}\right) x_{0} \\ &amp;=\frac{d}{d t}\left(I+A t+\frac{A^{2} t^{2}}{2 !}+\frac{A^{3} t^{3}}{3 !}+\cdots\right) x_{0} \\ &amp;=\left(A+A^{2} t+\frac{A^{3} t^{2}}{2 !}+\cdots\right) x_{0} \\ &amp;=A e^{A t} x_{0} \\ &amp;=A x(t) \end{aligned}<br>$$<br>由此可以证明$x(t)=e^{At}x_0$。</p><a id="more"></a><p>对于任意的矩阵A和标量t，都存在$Ae^{At}=e^{At}A$,由此可以推导出$\dot{x}(t)=e^{A t} A x_{0}$。因为$e^{At}$是无穷级数，因此通常在使用时将其转化为近似形式的表达式子更为可行。例如，将A用$A=P D P^{-1}$表示并带入$e^{At}$的泰勒展开式中可以得到如下等式。<br>$$<br>\begin{aligned} e^{A t} &amp;=I+A t+\frac{(A t)^{2}}{2 !}+\cdots \\ &amp;=I+\left(P D P^{-1}\right) t+\left(P D P^{-1}\right)\left(P D P^{-1}\right) \frac{t^{2}}{2 !}+\cdots \\ &amp;=P\left(I+D t+\frac{(D t)^{2}}{2 !}+\cdots\right) P^{-1} \\ &amp;=P e^{D t} P^{-1} \end{aligned}<br>$$</p><h1 id="二、旋转指数坐标"><a href="#二、旋转指数坐标" class="headerlink" title="二、旋转指数坐标"></a>二、旋转指数坐标</h1><p>旋转的指数坐标可以等效地视为一个单位旋转轴$\hat{\omega}\left(\hat{\omega} \in \mathbb{R}^{3},|\hat{\omega}|=1\right)$和绕该轴旋转角度$\theta \in \mathbb{R}$或者也可以等效的视为将两者相乘得到的三维向量$\hat{\omega} \theta \in \mathbb{R}^{3}$。</p><p>假设存在一个三维的矢量$p(0)$关于$\hat{\omega}$旋转$\theta$之后得到$p({\theta})$，以上假设都基于在固定坐标系中。这个旋转过程可以想象为$p(0)$为起点，在时间$t=0$到$t={\theta}$过程中以恒定速度1做旋转。我们用$p(t)$代表路径，$\dot{p}$代表速度，就可以得到如下的式子。<br>$$<br>\dot{p}=\hat{\omega} \times p<br>$$<br>上面的式子可以表示为如下的等式：<br>$$<br>\dot{p}=[\hat{\omega}] p<br>$$<br>期中初始状态为$p(0)$。由之前的线性微分方程理论的基本结果可以得到该式子的解为<br>$$<br>p(t)=e^{[\hat{\omega}] t} p(0)<br>$$<br>因为t和$\theta$是可以相互替代的，因此以上的式子也可以写成<br>$$<br>p(\theta)=e^{[\hat{\omega}] \theta} p(0)<br>$$<br>利用泰勒公式展开，并将$[\hat{\omega}]^{3}$用 $-[\hat{\omega}]$替换，将$[\hat{\omega}]^{4}$用$-[\hat{\omega}^{2}]$替换，将$[\hat{\omega}]^{5}$用$[\hat{\omega}]$替换，以此类推，可以得到以下的式子<br>$$<br>\begin{aligned} e^{[\hat{\omega}] \theta} &amp;=I+[\hat{\omega}] \theta+[\hat{\omega}]^{2} \frac{\theta^{2}}{2 !}+[\hat{\omega}]^{3} \frac{\theta^{3}}{3 !}+\cdots \\ &amp;=I+\left(\theta-\frac{\theta^{3}}{3 !}+\frac{\theta^{5}}{5 !}-\cdots\right)[\hat{\omega}]+\left(\frac{\theta^{2}}{2 !}-\frac{\theta^{4}}{4 !}+\frac{\theta^{6}}{6 !}-\cdots\right)[\hat{\omega}]^{2} \end{aligned}<br>$$<br>由泰勒展开式可知：<br>$$<br>\begin{aligned} \sin \theta &amp;=\theta-\frac{\theta^{3}}{3 !}+\frac{\theta^{5}}{5 !}-\cdots \\ \cos \theta &amp;=1-\frac{\theta^{2}}{2 !}+\frac{\theta^{4}}{4 !}-\cdots \end{aligned}<br>$$<br>因此我们便可以得到简化形式<br>$$<br>\operatorname{Rot}(\hat{\omega}, \theta)=e^{[\hat{\omega}] \theta}=I+\sin \theta[\hat{\omega}]+(1-\cos \theta)[\hat{\omega}]^{2} \in S O(3)<br>$$</p><h1 id="三、对数旋转矩阵"><a href="#三、对数旋转矩阵" class="headerlink" title="三、对数旋转矩阵"></a>三、对数旋转矩阵</h1>]]></content>
     
     <summary type="html">
     
