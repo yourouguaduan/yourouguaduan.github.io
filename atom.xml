@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yourouguaduan.github.com/child/"/>
-  <updated>2019-11-12T01:49:23.121Z</updated>
+  <updated>2019-11-19T03:09:13.399Z</updated>
   <id>http://yourouguaduan.github.com/child/</id>
   
   <author>
@@ -17,20 +17,67 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>interpolator</title>
-    <link href="http://yourouguaduan.github.com/child/2019/10/27/interpolator/"/>
-    <id>http://yourouguaduan.github.com/child/2019/10/27/interpolator/</id>
-    <published>2019-10-27T02:53:10.000Z</published>
-    <updated>2019-11-12T01:49:23.121Z</updated>
+    <title>gpmp</title>
+    <link href="http://yourouguaduan.github.com/child/2019/11/14/gpmp/"/>
+    <id>http://yourouguaduan.github.com/child/2019/11/14/gpmp/</id>
+    <published>2019-11-14T07:17:50.000Z</published>
+    <updated>2019-11-19T03:09:13.399Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="一、Python语法"><a href="#一、Python语法" class="headerlink" title="一、Python语法"></a>一、Python语法</h1><h2 id="1-Python-super（）函数"><a href="#1-Python-super（）函数" class="headerlink" title="1.Python super（）函数"></a>1.Python super（）函数</h2><p>super() 函数是用于调用父类(超类)的一个方法，用于解决多重继承问题。</p><p>super 是用来解决多重继承问题的，直接用类名调用父类方法在使用单继承的时候没问题，但是如果使用多继承，会涉及到查找顺序（MRO）、重复调用（钻石继承）等种种问题。</p><p>MRO 就是类的方法解析顺序表, 其实也就是继承父类方法时的顺序表。</p><h2 id="2-python-property"><a href="#2-python-property" class="headerlink" title="2.python @property"></a>2.python @property</h2><p>Python内置的@property装饰器就是负责把一个方法变成属性调用的。对于类的方法，同样可以使用@property装饰器起同样的作用。</p><p>例如</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">class Exam(object):</span><br><span class="line">    def __init__(self, score):</span><br><span class="line">        self._score = score</span><br><span class="line"></span><br><span class="line">    @property</span><br><span class="line">    def score(self):</span><br><span class="line">        return self._score</span><br><span class="line"></span><br><span class="line">    @score.setter</span><br><span class="line">    def score(self, val):</span><br><span class="line">        if val &lt; 0:</span><br><span class="line">            self._score = 0</span><br><span class="line">        elif val &gt; 100:</span><br><span class="line">            self._score = 100</span><br><span class="line">        else:</span><br><span class="line">            self._score = val</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt; e = Exam(60)</span><br><span class="line">&gt;&gt;&gt; e.score</span><br><span class="line">60</span><br><span class="line">&gt;&gt;&gt; e.score = 90</span><br><span class="line">&gt;&gt;&gt; e.score</span><br><span class="line">90</span><br><span class="line">&gt;&gt;&gt; e.score = 200</span><br><span class="line">&gt;&gt;&gt; e.score</span><br><span class="line">100</span><br></pre></td></tr></table></figure><p>上面的例子中，通过给方法 score 加上了 @property，就可以把 score 当成一个属性来用，此时，又会创建一个新的装饰器 score.setter，它可以把被装饰的方法变成属性来赋值。同时，也不一定要使用 score.setter 这个装饰器，这时 score 变成一个只读属性。</p><h2 id="3-python中pass语句"><a href="#3-python中pass语句" class="headerlink" title="3.python中pass语句"></a>3.python中pass语句</h2><p>Python pass 是空语句，是为了保持程序结构的完整性。pass不做任何事情，一般用做占位语句。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">def __init__(self):</span><br><span class="line">        pass</span><br></pre></td></tr></table></figure><p>这里的pass就是占据一个位置，因为如何定义一个空函数程序会报错，没有想好函数的内容是可以用pass填充，使程序可以正常运行。</p>]]></content>
+    <content type="html"><![CDATA[<p>高自由度的机器人在有限时间运动规划问题</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h1 id=&quot;一、Python语法&quot;&gt;&lt;a href=&quot;#一、Python语法&quot; class=&quot;headerlink&quot; title=&quot;一、Python语法&quot;&gt;&lt;/a&gt;一、Python语法&lt;/h1&gt;&lt;h2 id=&quot;1-Python-super（）函数&quot;&gt;&lt;a href=&quot;#1-P
+        &lt;p&gt;高自由度的机器人在有限时间运动规划问题&lt;/p&gt;
+
       
+    
+    </summary>
+    
+    
+    
+      <category term="robot" scheme="http://yourouguaduan.github.com/child/tags/robot/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>GTSAM</title>
+    <link href="http://yourouguaduan.github.com/child/2019/11/14/GTSAM/"/>
+    <id>http://yourouguaduan.github.com/child/2019/11/14/GTSAM/</id>
+    <published>2019-11-14T02:33:01.000Z</published>
+    <updated>2019-11-14T07:04:49.926Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="一、GTSAM-PDF"><a href="#一、GTSAM-PDF" class="headerlink" title="一、GTSAM.PDF"></a>一、GTSAM.PDF</h1><h2 id="1-OdometryExample"><a href="#1-OdometryExample" class="headerlink" title="1.OdometryExample"></a>1.OdometryExample</h2><h3 id="（1）创建因子图"><a href="#（1）创建因子图" class="headerlink" title="（1）创建因子图"></a>（1）创建因子图</h3><p>①创建一个空的非线性因子图</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">NonlinearFactorGraph graph;</span><br></pre></td></tr></table></figure><p>②在第一个点之前添加前段因子</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Pose2 priorMean(0.0, 0.0, 0.0); </span><br><span class="line">noiseModel::Diagonal::shared_ptr priorNoise = noiseModel::Diagonal::Sigmas(Vector3(0.3, 0.3, 0.1));</span><br><span class="line">graph.emplace_shared&lt;PriorFactor&lt;Pose2&gt; &gt;(1, priorMean, priorNoise);</span><br></pre></td></tr></table></figure><p>③添加相邻两点之间添加距离因子</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Pose2 odometry(2.0, 0.0, 0.0);</span><br><span class="line">noiseModel::Diagonal::shared_ptr odometryNoise = noiseModel::Diagonal::Sigmas(Vector3(0.2, 0.2, 0.1));</span><br><span class="line">graph.emplace_shared&lt;BetweenFactor&lt;Pose2&gt; &gt;(1, 2, odometry, odometryNoise);</span><br><span class="line">graph.emplace_shared&lt;BetweenFactor&lt;Pose2&gt; &gt;(2, 3, odometry, odometryNoise);</span><br></pre></td></tr></table></figure><h3 id="（2）GTSAM中的非线性优化过程"><a href="#（2）GTSAM中的非线性优化过程" class="headerlink" title="（2）GTSAM中的非线性优化过程"></a>（2）GTSAM中的非线性优化过程</h3><p>①创建初始估计值</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Values initial;</span><br><span class="line">initial.insert(1, Pose2(0.5, 0.0, 0.2));</span><br><span class="line">initial.insert(2, Pose2(2.3, 0.1, -0.2));</span><br><span class="line">initial.insert(3, Pose2(4.1, 0.1, 0.1));</span><br></pre></td></tr></table></figure><p>②使用莱文贝格－马夸特方法进行优化</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Values result = LevenbergMarquardtOptimizer(graph, initial).optimize();</span><br></pre></td></tr></table></figure><h3 id="（3）完全后验推论"><a href="#（3）完全后验推论" class="headerlink" title="（3）完全后验推论"></a>（3）完全后验推论</h3><p>计算每个点的末端协方差</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">cout.precision(2);</span><br><span class="line">  Marginals marginals(graph, result);</span><br><span class="line">  cout &lt;&lt; &quot;x1 covariance:\n&quot; &lt;&lt; marginals.marginalCovariance(1) &lt;&lt; endl;</span><br><span class="line">  cout &lt;&lt; &quot;x2 covariance:\n&quot; &lt;&lt; marginals.marginalCovariance(2) &lt;&lt; endl;</span><br><span class="line">  cout &lt;&lt; &quot;x3 covariance:\n&quot; &lt;&lt; marginals.marginalCovariance(3) &lt;&lt; endl;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;一、GTSAM-PDF&quot;&gt;&lt;a href=&quot;#一、GTSAM-PDF&quot; class=&quot;headerlink&quot; title=&quot;一、GTSAM.PDF&quot;&gt;&lt;/a&gt;一、GTSAM.PDF&lt;/h1&gt;&lt;h2 id=&quot;1-OdometryExample&quot;&gt;&lt;a href=&quot;#
+      
+    
+    </summary>
+    
+    
+    
+      <category term="GTSAM；c++" scheme="http://yourouguaduan.github.com/child/tags/GTSAM%EF%BC%9Bc/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>interpolator</title>
+    <link href="http://yourouguaduan.github.com/child/2019/10/27/interpolator/"/>
+    <id>http://yourouguaduan.github.com/child/2019/10/27/interpolator/</id>
+    <published>2019-10-27T02:53:10.000Z</published>
+    <updated>2019-11-12T01:56:42.247Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="一、Python语法"><a href="#一、Python语法" class="headerlink" title="一、Python语法"></a>一、Python语法</h1><h2 id="1-Python-super（）函数"><a href="#1-Python-super（）函数" class="headerlink" title="1.Python super（）函数"></a>1.Python super（）函数</h2><p>super() 函数是用于调用父类(超类)的一个方法，用于解决多重继承问题。</p><p>super 是用来解决多重继承问题的，直接用类名调用父类方法在使用单继承的时候没问题，但是如果使用多继承，会涉及到查找顺序（MRO）、重复调用（钻石继承）等种种问题。</p><a id="more"></a><p>MRO 就是类的方法解析顺序表, 其实也就是继承父类方法时的顺序表。</p><h2 id="2-python-property"><a href="#2-python-property" class="headerlink" title="2.python @property"></a>2.python @property</h2><p>Python内置的@property装饰器就是负责把一个方法变成属性调用的。对于类的方法，同样可以使用@property装饰器起同样的作用。</p><p>例如</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">class Exam(object):</span><br><span class="line">    def __init__(self, score):</span><br><span class="line">        self._score = score</span><br><span class="line"></span><br><span class="line">    @property</span><br><span class="line">    def score(self):</span><br><span class="line">        return self._score</span><br><span class="line"></span><br><span class="line">    @score.setter</span><br><span class="line">    def score(self, val):</span><br><span class="line">        if val &lt; 0:</span><br><span class="line">            self._score = 0</span><br><span class="line">        elif val &gt; 100:</span><br><span class="line">            self._score = 100</span><br><span class="line">        else:</span><br><span class="line">            self._score = val</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt; e = Exam(60)</span><br><span class="line">&gt;&gt;&gt; e.score</span><br><span class="line">60</span><br><span class="line">&gt;&gt;&gt; e.score = 90</span><br><span class="line">&gt;&gt;&gt; e.score</span><br><span class="line">90</span><br><span class="line">&gt;&gt;&gt; e.score = 200</span><br><span class="line">&gt;&gt;&gt; e.score</span><br><span class="line">100</span><br></pre></td></tr></table></figure><p>上面的例子中，通过给方法 score 加上了 @property，就可以把 score 当成一个属性来用，此时，又会创建一个新的装饰器 score.setter，它可以把被装饰的方法变成属性来赋值。同时，也不一定要使用 score.setter 这个装饰器，这时 score 变成一个只读属性。</p><h2 id="3-python中pass语句"><a href="#3-python中pass语句" class="headerlink" title="3.python中pass语句"></a>3.python中pass语句</h2><p>Python pass 是空语句，是为了保持程序结构的完整性。pass不做任何事情，一般用做占位语句。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">def __init__(self):</span><br><span class="line">        pass</span><br></pre></td></tr></table></figure><p>这里的pass就是占据一个位置，因为如何定义一个空函数程序会报错，没有想好函数的内容是可以用pass填充，使程序可以正常运行。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;一、Python语法&quot;&gt;&lt;a href=&quot;#一、Python语法&quot; class=&quot;headerlink&quot; title=&quot;一、Python语法&quot;&gt;&lt;/a&gt;一、Python语法&lt;/h1&gt;&lt;h2 id=&quot;1-Python-super（）函数&quot;&gt;&lt;a href=&quot;#1-Python-super（）函数&quot; class=&quot;headerlink&quot; title=&quot;1.Python super（）函数&quot;&gt;&lt;/a&gt;1.Python super（）函数&lt;/h2&gt;&lt;p&gt;super() 函数是用于调用父类(超类)的一个方法，用于解决多重继承问题。&lt;/p&gt;
+&lt;p&gt;super 是用来解决多重继承问题的，直接用类名调用父类方法在使用单继承的时候没问题，但是如果使用多继承，会涉及到查找顺序（MRO）、重复调用（钻石继承）等种种问题。&lt;/p&gt;
     
     </summary>
     
@@ -45,15 +92,15 @@
     <link href="http://yourouguaduan.github.com/child/2019/10/22/toppra/"/>
     <id>http://yourouguaduan.github.com/child/2019/10/22/toppra/</id>
     <published>2019-10-22T07:03:14.000Z</published>
-    <updated>2019-10-24T13:10:09.916Z</updated>
+    <updated>2019-11-12T03:01:13.418Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="1-kinematics-duration-py→A-simple-example"><a href="#1-kinematics-duration-py→A-simple-example" class="headerlink" title="1.kinematics_duration.py→A simple example"></a>1.kinematics_duration.py→A simple example</h2><h3 id="①速度约束"><a href="#①速度约束" class="headerlink" title="①速度约束"></a>①速度约束</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">vlim_ = np.random.rand(dof) * 20</span><br><span class="line">vlim_ = np.random.rand(dof) * 20</span><br><span class="line">pc_vel = constraint.JointVelocityConstraint(vlim)#输出关节速度约束</span><br></pre></td></tr></table></figure><h3 id="②加速度约束"><a href="#②加速度约束" class="headerlink" title="②加速度约束"></a>②加速度约束</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">alim_ = np.random.rand(dof) * 2</span><br><span class="line">alim = np.vstack((-alim_, alim_)).T</span><br><span class="line">pc_acc = constraint.JointAccelerationConstraint(</span><br><span class="line">        alim, discretization_scheme=constraint.DiscretizationType.Interpolation)#输出关节加速度约束</span><br></pre></td></tr></table></figure><h3 id="③计算经过100点的时候的时间以及每个点的位姿"><a href="#③计算经过100点的时候的时间以及每个点的位姿" class="headerlink" title="③计算经过100点的时候的时间以及每个点的位姿"></a>③计算经过100点的时候的时间以及每个点的位姿</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ts_sample = np.linspace(0, jnt_traj.get_duration(), 100)</span><br><span class="line">qs_sample = jnt_traj.evaldd(ts_sample)</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<h1 id><a href="#" class="headerlink" title></a></h1><h3 id="1-速度约束"><a href="#1-速度约束" class="headerlink" title="1.速度约束"></a>1.速度约束</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">vlim_ = np.random.rand(dof) * 20</span><br><span class="line">vlim_ = np.random.rand(dof) * 20</span><br><span class="line">pc_vel = constraint.JointVelocityConstraint(vlim)#输出关节速度约束</span><br></pre></td></tr></table></figure><h3 id="2-加速度约束"><a href="#2-加速度约束" class="headerlink" title="2.加速度约束"></a>2.加速度约束</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">alim_ = np.random.rand(dof) * 2</span><br><span class="line">alim = np.vstack((-alim_, alim_)).T</span><br><span class="line">pc_acc = constraint.JointAccelerationConstraint(</span><br><span class="line">        alim, discretization_scheme=constraint.DiscretizationType.Interpolation)#输出关节加速度约束</span><br></pre></td></tr></table></figure><h3 id="3-计算经过100点的时候的时间以及每个点的位姿"><a href="#3-计算经过100点的时候的时间以及每个点的位姿" class="headerlink" title="3.计算经过100点的时候的时间以及每个点的位姿"></a>3.计算经过100点的时候的时间以及每个点的位姿</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ts_sample = np.linspace(0, jnt_traj.get_duration(), 100)</span><br><span class="line">qs_sample = jnt_traj.evaldd(ts_sample)</span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h2 id=&quot;1-kinematics-duration-py→A-simple-example&quot;&gt;&lt;a href=&quot;#1-kinematics-duration-py→A-simple-example&quot; class=&quot;headerlink&quot; title=&quot;1.kinemati
+        &lt;h1 id&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot; title&gt;&lt;/a&gt;&lt;/h1&gt;&lt;h3 id=&quot;1-速度约束&quot;&gt;&lt;a href=&quot;#1-速度约束&quot; class=&quot;headerlink&quot; title=&quot;1.速度约束&quot;&gt;&lt;/a&gt;1.速度约束&lt;/h3&gt;&lt;fig
       
     
     </summary>
@@ -186,9 +233,9 @@
     <link href="http://yourouguaduan.github.com/child/2019/10/08/%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%8E%A8%E5%AF%BC/"/>
     <id>http://yourouguaduan.github.com/child/2019/10/08/机器人学公式推导/</id>
     <published>2019-10-08T01:34:57.000Z</published>
-    <updated>2019-10-22T13:50:20.554Z</updated>
+    <updated>2019-11-12T03:06:35.504Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="一、线性微分方程理论的基本结果"><a href="#一、线性微分方程理论的基本结果" class="headerlink" title="一、线性微分方程理论的基本结果"></a>一、线性微分方程理论的基本结果</h1><p>由一阶线性微分方程$\dot{x}(t)=ax(t)$可得$x(t)=e^{at}x_0$,对$e^{at}$利用泰勒公式展开可得$e^{at}=1+at+{(at)^2}/2!+{(at)^3}/3!+\cdots$，代入线性微分方程的解中可以得到$x(t)=(1+at+{(at)^2}/2!+{(at)^3}/3!+\cdots)x_0$。</p><p>由此实数a用矩阵A代替，得$x(t)=(I+At+{(At)^2}/2!+{(At)^3}/3!+\cdots)x_0$，公式两侧对t进行求导可得<br>$$<br>\begin{aligned} \dot{x}(t) &amp;=\left(\frac{d}{d t} e^{A t}\right) x_{0} \\ &amp;=\frac{d}{d t}\left(I+A t+\frac{A^{2} t^{2}}{2 !}+\frac{A^{3} t^{3}}{3 !}+\cdots\right) x_{0} \\ &amp;=\left(A+A^{2} t+\frac{A^{3} t^{2}}{2 !}+\cdots\right) x_{0} \\ &amp;=A e^{A t} x_{0} \\ &amp;=A x(t) \end{aligned}<br>$$<br>由此可以证明$x(t)=e^{At}x_0$。</p><a id="more"></a><p>对于任意的矩阵A和标量t，都存在$Ae^{At}=e^{At}A$,由此可以推导出$\dot{x}(t)=e^{A t} A x_{0}$。因为$e^{At}$是无穷级数，因此通常在使用时将其转化为近似形式的表达式子更为可行。例如，将A用$A=P D P^{-1}$表示并带入$e^{At}$的泰勒展开式中可以得到如下等式。<br>$$<br>\begin{aligned} e^{A t} &amp;=I+A t+\frac{(A t)^{2}}{2 !}+\cdots \\ &amp;=I+\left(P D P^{-1}\right) t+\left(P D P^{-1}\right)\left(P D P^{-1}\right) \frac{t^{2}}{2 !}+\cdots \\ &amp;=P\left(I+D t+\frac{(D t)^{2}}{2 !}+\cdots\right) P^{-1} \\ &amp;=P e^{D t} P^{-1} \end{aligned}<br>$$</p><h1 id="二、旋转指数坐标"><a href="#二、旋转指数坐标" class="headerlink" title="二、旋转指数坐标"></a>二、旋转指数坐标</h1><p>旋转的指数坐标可以等效地视为一个单位旋转轴$\hat{\omega}\left(\hat{\omega} \in \mathbb{R}^{3},|\hat{\omega}|=1\right)$和绕该轴旋转角度$\theta \in \mathbb{R}$或者也可以等效的视为将两者相乘得到的三维向量$\hat{\omega} \theta \in \mathbb{R}^{3}$。</p><p>假设存在一个三维的矢量$p(0)$关于$\hat{\omega}$旋转$\theta$之后得到$p({\theta})$，以上假设都基于在固定坐标系中。这个旋转过程可以想象为$p(0)$为起点，在时间$t=0$到$t={\theta}$过程中以恒定速度1做旋转。我们用$p(t)$代表路径，$\dot{p}$代表速度，就可以得到如下的式子。<br>$$<br>\dot{p}=\hat{\omega} \times p<br>$$<br>上面的式子可以表示为如下的等式：<br>$$<br>\dot{p}=[\hat{\omega}] p<br>$$<br>期中初始状态为$p(0)$。由之前的线性微分方程理论的基本结果可以得到该式子的解为<br>$$<br>p(t)=e^{[\hat{\omega}] t} p(0)<br>$$<br>因为t和$\theta$是可以相互替代的，因此以上的式子也可以写成<br>$$<br>p(\theta)=e^{[\hat{\omega}] \theta} p(0)<br>$$<br>利用泰勒公式展开，并将$[\hat{\omega}]^{3}$用 $-[\hat{\omega}]$替换，将$[\hat{\omega}]^{4}$用$-[\hat{\omega}^{2}]$替换，将$[\hat{\omega}]^{5}$用$[\hat{\omega}]$替换，以此类推，可以得到以下的式子<br>$$<br>\begin{aligned} e^{[\hat{\omega}] \theta} &amp;=I+[\hat{\omega}] \theta+[\hat{\omega}]^{2} \frac{\theta^{2}}{2 !}+[\hat{\omega}]^{3} \frac{\theta^{3}}{3 !}+\cdots \\ &amp;=I+\left(\theta-\frac{\theta^{3}}{3 !}+\frac{\theta^{5}}{5 !}-\cdots\right)[\hat{\omega}]+\left(\frac{\theta^{2}}{2 !}-\frac{\theta^{4}}{4 !}+\frac{\theta^{6}}{6 !}-\cdots\right)[\hat{\omega}]^{2} \end{aligned}<br>$$<br>由泰勒展开式可知：<br>$$<br>\begin{aligned} \sin \theta &amp;=\theta-\frac{\theta^{3}}{3 !}+\frac{\theta^{5}}{5 !}-\cdots \\ \cos \theta &amp;=1-\frac{\theta^{2}}{2 !}+\frac{\theta^{4}}{4 !}-\cdots \end{aligned}<br>$$<br>因此我们便可以得到简化形式<br>$$<br>\operatorname{Rot}(\hat{\omega}, \theta)=e^{[\hat{\omega}] \theta}=I+\sin \theta[\hat{\omega}]+(1-\cos \theta)[\hat{\omega}]^{2} \in S O(3)<br>$$</p><h1 id="三、对数旋转矩阵"><a href="#三、对数旋转矩阵" class="headerlink" title="三、对数旋转矩阵"></a>三、对数旋转矩阵</h1>]]></content>
+    <content type="html"><![CDATA[<h1 id="一、线性微分方程理论的基本结果"><a href="#一、线性微分方程理论的基本结果" class="headerlink" title="一、线性微分方程理论的基本结果"></a>一、线性微分方程理论的基本结果</h1><p>由一阶线性微分方程$\dot{x}(t)=ax(t)$可得$x(t)=e^{at}x_0$,对$e^{at}$利用泰勒公式展开可得$e^{at}=1+at+{(at)^2}/2!+{(at)^3}/3!+\cdots$，代入线性微分方程的解中可以得到$x(t)=(1+at+{(at)^2}/2!+{(at)^3}/3!+\cdots)x_0$。</p><p>由此实数a用矩阵A代替，得$x(t)=(I+At+{(At)^2}/2!+{(At)^3}/3!+\cdots)x_0$，公式两侧对t进行求导可得<br>$$<br>\begin{aligned} \dot{x}(t) &amp;=\left(\frac{d}{d t} e^{A t}\right) x_{0} \\ &amp;=\frac{d}{d t}\left(I+A t+\frac{A^{2} t^{2}}{2 !}+\frac{A^{3} t^{3}}{3 !}+\cdots\right) x_{0} \\ &amp;=\left(A+A^{2} t+\frac{A^{3} t^{2}}{2 !}+\cdots\right) x_{0} \\ &amp;=A e^{A t} x_{0} \\ &amp;=A x(t) \end{aligned}<br>$$<br>由此可以证明$x(t)=e^{At}x_0$。</p><a id="more"></a><p>对于任意的矩阵A和标量t，都存在$Ae^{At}=e^{At}A$,由此可以推导出$\dot{x}(t)=e^{A t} A x_{0}$。因为$e^{At}$是无穷级数，因此通常在使用时将其转化为近似形式的表达式子更为可行。例如，将A用$A=P D P^{-1}$表示并带入$e^{At}$的泰勒展开式中可以得到如下等式。<br>$$<br>\begin{aligned} e^{A t} &amp;=I+A t+\frac{(A t)^{2}}{2 !}+\cdots \\ &amp;=I+\left(P D P^{-1}\right) t+\left(P D P^{-1}\right)\left(P D P^{-1}\right) \frac{t^{2}}{2 !}+\cdots \\ &amp;=P\left(I+D t+\frac{(D t)^{2}}{2 !}+\cdots\right) P^{-1} \\ &amp;=P e^{D t} P^{-1} \end{aligned}<br>$$</p><h1 id="二、旋转指数坐标"><a href="#二、旋转指数坐标" class="headerlink" title="二、旋转指数坐标"></a>二、旋转指数坐标</h1><p>旋转的指数坐标可以等效地视为一个单位旋转轴$\hat{\omega}\left(\hat{\omega} \in \mathbb{R}^{3},|\hat{\omega}|=1\right)$和绕该轴旋转角度$\theta \in \mathbb{R}$或者也可以等效的视为将两者相乘得到的三维向量$\hat{\omega} \theta \in \mathbb{R}^{3}$。</p><p>假设存在一个三维的矢量$p(0)$关于$\hat{\omega}$旋转$\theta$之后得到$p({\theta})$，以上假设都基于在固定坐标系中。这个旋转过程可以想象为$p(0)$为起点，在时间$t=0$到$t={\theta}$过程中以恒定速度1做旋转。我们用$p(t)$代表路径，$\dot{p}$代表速度，就可以得到如下的式子。<br>$$<br>\dot{p}=\hat{\omega} \times p<br>$$<br>上面的式子可以表示为如下的等式：<br>$$<br>\dot{p}=[\hat{\omega}] p<br>$$<br>期中初始状态为$p(0)$。由之前的线性微分方程理论的基本结果可以得到该式子的解为<br>$$<br>p(t)=e^{[\hat{\omega}] t} p(0)<br>$$<br>因为t和$\theta$是可以相互替代的，因此以上的式子也可以写成<br>$$<br>p(\theta)=e^{[\hat{\omega}] \theta} p(0)<br>$$<br>利用泰勒公式展开，并将$[\hat{\omega}]^{3}$用 $-[\hat{\omega}]$替换，将$[\hat{\omega}]^{4}$用$-[\hat{\omega}^{2}]$替换，将$[\hat{\omega}]^{5}$用$[\hat{\omega}]$替换，以此类推，可以得到以下的式子<br>$$<br>\begin{aligned} e^{[\hat{\omega}] \theta} &amp;=I+[\hat{\omega}] \theta+[\hat{\omega}]^{2} \frac{\theta^{2}}{2 !}+[\hat{\omega}]^{3} \frac{\theta^{3}}{3 !}+\cdots \\ &amp;=I+\left(\theta-\frac{\theta^{3}}{3 !}+\frac{\theta^{5}}{5 !}-\cdots\right)[\hat{\omega}]+\left(\frac{\theta^{2}}{2 !}-\frac{\theta^{4}}{4 !}+\frac{\theta^{6}}{6 !}-\cdots\right)[\hat{\omega}]^{2} \end{aligned}<br>$$<br>由泰勒展开式可知：<br>$$<br>\begin{aligned} \sin \theta &amp;=\theta-\frac{\theta^{3}}{3 !}+\frac{\theta^{5}}{5 !}-\cdots \\ \cos \theta &amp;=1-\frac{\theta^{2}}{2 !}+\frac{\theta^{4}}{4 !}-\cdots \end{aligned}<br>$$<br>因此我们便可以得到简化形式<br>$$<br>\operatorname{Rot}(\hat{\omega}, \theta)=e^{[\hat{\omega}] \theta}=I+\sin \theta[\hat{\omega}]+(1-\cos \theta)[\hat{\omega}]^{2} \in S O(3)<br>$$</p><h1 id="三、对数旋转矩阵"><a href="#三、对数旋转矩阵" class="headerlink" title="三、对数旋转矩阵"></a>三、对数旋转矩阵</h1><p>如果$$\hat{\omega} \theta \in \mathbb{R}^{3}$$表示旋转矩阵R中的指数坐标，那么反对称矩阵$$[\hat{\omega}]=[\hat{\omega}] \theta$$就是R的对数矩阵。对数矩阵是逆指数矩阵，</p>]]></content>
     
     <summary type="html">
     
@@ -200,28 +247,6 @@
     
     
       <category term="MR" scheme="http://yourouguaduan.github.com/child/tags/MR/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://yourouguaduan.github.com/child/2019/09/25/hello-world/"/>
-    <id>http://yourouguaduan.github.com/child/2019/09/25/hello-world/</id>
-    <published>2019-09-25T02:04:15.601Z</published>
-    <updated>2019-08-18T09:12:53.874Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
-      
-    
-    </summary>
-    
-    
     
   </entry>
   
@@ -302,29 +327,6 @@
       
       
         &lt;p&gt;[&lt;a href=&quot;https://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html]&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.cnblogs
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>my-first-blog</title>
-    <link href="http://yourouguaduan.github.com/child/2019/08/18/my-first-blog/"/>
-    <id>http://yourouguaduan.github.com/child/2019/08/18/my-first-blog/</id>
-    <published>2019-08-18T09:41:35.000Z</published>
-    <updated>2019-08-18T10:57:09.647Z</updated>
-    
-    <content type="html"><![CDATA[<p>第一次使用，请多指教</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;第一次使用，请多指教&lt;/p&gt;
-
       
     
     </summary>

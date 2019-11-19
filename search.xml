@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[gpmp]]></title>
+    <url>%2F2019%2F11%2F14%2Fgpmp%2F</url>
+    <content type="text"><![CDATA[高自由度的机器人在有限时间运动规划问题]]></content>
+      <tags>
+        <tag>robot</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[GTSAM]]></title>
+    <url>%2F2019%2F11%2F14%2FGTSAM%2F</url>
+    <content type="text"><![CDATA[一、GTSAM.PDF1.OdometryExample（1）创建因子图①创建一个空的非线性因子图 1NonlinearFactorGraph graph; ②在第一个点之前添加前段因子 123Pose2 priorMean(0.0, 0.0, 0.0); noiseModel::Diagonal::shared_ptr priorNoise = noiseModel::Diagonal::Sigmas(Vector3(0.3, 0.3, 0.1));graph.emplace_shared&lt;PriorFactor&lt;Pose2&gt; &gt;(1, priorMean, priorNoise); ③添加相邻两点之间添加距离因子 1234Pose2 odometry(2.0, 0.0, 0.0);noiseModel::Diagonal::shared_ptr odometryNoise = noiseModel::Diagonal::Sigmas(Vector3(0.2, 0.2, 0.1));graph.emplace_shared&lt;BetweenFactor&lt;Pose2&gt; &gt;(1, 2, odometry, odometryNoise);graph.emplace_shared&lt;BetweenFactor&lt;Pose2&gt; &gt;(2, 3, odometry, odometryNoise); （2）GTSAM中的非线性优化过程①创建初始估计值 1234Values initial;initial.insert(1, Pose2(0.5, 0.0, 0.2));initial.insert(2, Pose2(2.3, 0.1, -0.2));initial.insert(3, Pose2(4.1, 0.1, 0.1)); ②使用莱文贝格－马夸特方法进行优化 1Values result = LevenbergMarquardtOptimizer(graph, initial).optimize(); （3）完全后验推论计算每个点的末端协方差 12345cout.precision(2); Marginals marginals(graph, result); cout &lt;&lt; &quot;x1 covariance:\n&quot; &lt;&lt; marginals.marginalCovariance(1) &lt;&lt; endl; cout &lt;&lt; &quot;x2 covariance:\n&quot; &lt;&lt; marginals.marginalCovariance(2) &lt;&lt; endl; cout &lt;&lt; &quot;x3 covariance:\n&quot; &lt;&lt; marginals.marginalCovariance(3) &lt;&lt; endl;]]></content>
+      <tags>
+        <tag>GTSAM；c++</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[interpolator]]></title>
     <url>%2F2019%2F10%2F27%2Finterpolator%2F</url>
     <content type="text"><![CDATA[一、Python语法1.Python super（）函数super() 函数是用于调用父类(超类)的一个方法，用于解决多重继承问题。 super 是用来解决多重继承问题的，直接用类名调用父类方法在使用单继承的时候没问题，但是如果使用多继承，会涉及到查找顺序（MRO）、重复调用（钻石继承）等种种问题。 MRO 就是类的方法解析顺序表, 其实也就是继承父类方法时的顺序表。 2.python @propertyPython内置的@property装饰器就是负责把一个方法变成属性调用的。对于类的方法，同样可以使用@property装饰器起同样的作用。 例如 1234567891011121314151617181920212223242526class Exam(object): def __init__(self, score): self._score = score @property def score(self): return self._score @score.setter def score(self, val): if val &lt; 0: self._score = 0 elif val &gt; 100: self._score = 100 else: self._score = val&gt;&gt;&gt; e = Exam(60)&gt;&gt;&gt; e.score60&gt;&gt;&gt; e.score = 90&gt;&gt;&gt; e.score90&gt;&gt;&gt; e.score = 200&gt;&gt;&gt; e.score100 上面的例子中，通过给方法 score 加上了 @property，就可以把 score 当成一个属性来用，此时，又会创建一个新的装饰器 score.setter，它可以把被装饰的方法变成属性来赋值。同时，也不一定要使用 score.setter 这个装饰器，这时 score 变成一个只读属性。 3.python中pass语句Python pass 是空语句，是为了保持程序结构的完整性。pass不做任何事情，一般用做占位语句。 12def __init__(self): pass 这里的pass就是占据一个位置，因为如何定义一个空函数程序会报错，没有想好函数的内容是可以用pass填充，使程序可以正常运行。]]></content>
@@ -11,7 +27,7 @@
   <entry>
     <title><![CDATA[toppra1-例程]]></title>
     <url>%2F2019%2F10%2F22%2Ftoppra%2F</url>
-    <content type="text"><![CDATA[1.kinematics_duration.py→A simple example①速度约束123vlim_ = np.random.rand(dof) * 20vlim_ = np.random.rand(dof) * 20pc_vel = constraint.JointVelocityConstraint(vlim)#输出关节速度约束 ②加速度约束1234alim_ = np.random.rand(dof) * 2alim = np.vstack((-alim_, alim_)).Tpc_acc = constraint.JointAccelerationConstraint( alim, discretization_scheme=constraint.DiscretizationType.Interpolation)#输出关节加速度约束 ③计算经过100点的时候的时间以及每个点的位姿12ts_sample = np.linspace(0, jnt_traj.get_duration(), 100)qs_sample = jnt_traj.evaldd(ts_sample)]]></content>
+    <content type="text"><![CDATA[1.速度约束123vlim_ = np.random.rand(dof) * 20vlim_ = np.random.rand(dof) * 20pc_vel = constraint.JointVelocityConstraint(vlim)#输出关节速度约束 2.加速度约束1234alim_ = np.random.rand(dof) * 2alim = np.vstack((-alim_, alim_)).Tpc_acc = constraint.JointAccelerationConstraint( alim, discretization_scheme=constraint.DiscretizationType.Interpolation)#输出关节加速度约束 3.计算经过100点的时候的时间以及每个点的位姿12ts_sample = np.linspace(0, jnt_traj.get_duration(), 100)qs_sample = jnt_traj.evaldd(ts_sample)]]></content>
   </entry>
   <entry>
     <title><![CDATA[hexo相关]]></title>
@@ -56,15 +72,10 @@
   <entry>
     <title><![CDATA[机器人学公式推导]]></title>
     <url>%2F2019%2F10%2F08%2F%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%8E%A8%E5%AF%BC%2F</url>
-    <content type="text"><![CDATA[一、线性微分方程理论的基本结果由一阶线性微分方程$\dot{x}(t)=ax(t)$可得$x(t)=e^{at}x_0$,对$e^{at}$利用泰勒公式展开可得$e^{at}=1+at+{(at)^2}/2!+{(at)^3}/3!+\cdots$，代入线性微分方程的解中可以得到$x(t)=(1+at+{(at)^2}/2!+{(at)^3}/3!+\cdots)x_0$。 由此实数a用矩阵A代替，得$x(t)=(I+At+{(At)^2}/2!+{(At)^3}/3!+\cdots)x_0$，公式两侧对t进行求导可得$$\begin{aligned} \dot{x}(t) &amp;=\left(\frac{d}{d t} e^{A t}\right) x_{0} \\ &amp;=\frac{d}{d t}\left(I+A t+\frac{A^{2} t^{2}}{2 !}+\frac{A^{3} t^{3}}{3 !}+\cdots\right) x_{0} \\ &amp;=\left(A+A^{2} t+\frac{A^{3} t^{2}}{2 !}+\cdots\right) x_{0} \\ &amp;=A e^{A t} x_{0} \\ &amp;=A x(t) \end{aligned}$$由此可以证明$x(t)=e^{At}x_0$。 对于任意的矩阵A和标量t，都存在$Ae^{At}=e^{At}A$,由此可以推导出$\dot{x}(t)=e^{A t} A x_{0}$。因为$e^{At}$是无穷级数，因此通常在使用时将其转化为近似形式的表达式子更为可行。例如，将A用$A=P D P^{-1}$表示并带入$e^{At}$的泰勒展开式中可以得到如下等式。$$\begin{aligned} e^{A t} &amp;=I+A t+\frac{(A t)^{2}}{2 !}+\cdots \\ &amp;=I+\left(P D P^{-1}\right) t+\left(P D P^{-1}\right)\left(P D P^{-1}\right) \frac{t^{2}}{2 !}+\cdots \\ &amp;=P\left(I+D t+\frac{(D t)^{2}}{2 !}+\cdots\right) P^{-1} \\ &amp;=P e^{D t} P^{-1} \end{aligned}$$ 二、旋转指数坐标旋转的指数坐标可以等效地视为一个单位旋转轴$\hat{\omega}\left(\hat{\omega} \in \mathbb{R}^{3},|\hat{\omega}|=1\right)$和绕该轴旋转角度$\theta \in \mathbb{R}$或者也可以等效的视为将两者相乘得到的三维向量$\hat{\omega} \theta \in \mathbb{R}^{3}$。 假设存在一个三维的矢量$p(0)$关于$\hat{\omega}$旋转$\theta$之后得到$p({\theta})$，以上假设都基于在固定坐标系中。这个旋转过程可以想象为$p(0)$为起点，在时间$t=0$到$t={\theta}$过程中以恒定速度1做旋转。我们用$p(t)$代表路径，$\dot{p}$代表速度，就可以得到如下的式子。$$\dot{p}=\hat{\omega} \times p$$上面的式子可以表示为如下的等式：$$\dot{p}=[\hat{\omega}] p$$期中初始状态为$p(0)$。由之前的线性微分方程理论的基本结果可以得到该式子的解为$$p(t)=e^{[\hat{\omega}] t} p(0)$$因为t和$\theta$是可以相互替代的，因此以上的式子也可以写成$$p(\theta)=e^{[\hat{\omega}] \theta} p(0)$$利用泰勒公式展开，并将$[\hat{\omega}]^{3}$用 $-[\hat{\omega}]$替换，将$[\hat{\omega}]^{4}$用$-[\hat{\omega}^{2}]$替换，将$[\hat{\omega}]^{5}$用$[\hat{\omega}]$替换，以此类推，可以得到以下的式子$$\begin{aligned} e^{[\hat{\omega}] \theta} &amp;=I+[\hat{\omega}] \theta+[\hat{\omega}]^{2} \frac{\theta^{2}}{2 !}+[\hat{\omega}]^{3} \frac{\theta^{3}}{3 !}+\cdots \\ &amp;=I+\left(\theta-\frac{\theta^{3}}{3 !}+\frac{\theta^{5}}{5 !}-\cdots\right)[\hat{\omega}]+\left(\frac{\theta^{2}}{2 !}-\frac{\theta^{4}}{4 !}+\frac{\theta^{6}}{6 !}-\cdots\right)[\hat{\omega}]^{2} \end{aligned}$$由泰勒展开式可知：$$\begin{aligned} \sin \theta &amp;=\theta-\frac{\theta^{3}}{3 !}+\frac{\theta^{5}}{5 !}-\cdots \\ \cos \theta &amp;=1-\frac{\theta^{2}}{2 !}+\frac{\theta^{4}}{4 !}-\cdots \end{aligned}$$因此我们便可以得到简化形式$$\operatorname{Rot}(\hat{\omega}, \theta)=e^{[\hat{\omega}] \theta}=I+\sin \theta[\hat{\omega}]+(1-\cos \theta)[\hat{\omega}]^{2} \in S O(3)$$ 三、对数旋转矩阵]]></content>
+    <content type="text"><![CDATA[一、线性微分方程理论的基本结果由一阶线性微分方程$\dot{x}(t)=ax(t)$可得$x(t)=e^{at}x_0$,对$e^{at}$利用泰勒公式展开可得$e^{at}=1+at+{(at)^2}/2!+{(at)^3}/3!+\cdots$，代入线性微分方程的解中可以得到$x(t)=(1+at+{(at)^2}/2!+{(at)^3}/3!+\cdots)x_0$。 由此实数a用矩阵A代替，得$x(t)=(I+At+{(At)^2}/2!+{(At)^3}/3!+\cdots)x_0$，公式两侧对t进行求导可得$$\begin{aligned} \dot{x}(t) &amp;=\left(\frac{d}{d t} e^{A t}\right) x_{0} \\ &amp;=\frac{d}{d t}\left(I+A t+\frac{A^{2} t^{2}}{2 !}+\frac{A^{3} t^{3}}{3 !}+\cdots\right) x_{0} \\ &amp;=\left(A+A^{2} t+\frac{A^{3} t^{2}}{2 !}+\cdots\right) x_{0} \\ &amp;=A e^{A t} x_{0} \\ &amp;=A x(t) \end{aligned}$$由此可以证明$x(t)=e^{At}x_0$。 对于任意的矩阵A和标量t，都存在$Ae^{At}=e^{At}A$,由此可以推导出$\dot{x}(t)=e^{A t} A x_{0}$。因为$e^{At}$是无穷级数，因此通常在使用时将其转化为近似形式的表达式子更为可行。例如，将A用$A=P D P^{-1}$表示并带入$e^{At}$的泰勒展开式中可以得到如下等式。$$\begin{aligned} e^{A t} &amp;=I+A t+\frac{(A t)^{2}}{2 !}+\cdots \\ &amp;=I+\left(P D P^{-1}\right) t+\left(P D P^{-1}\right)\left(P D P^{-1}\right) \frac{t^{2}}{2 !}+\cdots \\ &amp;=P\left(I+D t+\frac{(D t)^{2}}{2 !}+\cdots\right) P^{-1} \\ &amp;=P e^{D t} P^{-1} \end{aligned}$$ 二、旋转指数坐标旋转的指数坐标可以等效地视为一个单位旋转轴$\hat{\omega}\left(\hat{\omega} \in \mathbb{R}^{3},|\hat{\omega}|=1\right)$和绕该轴旋转角度$\theta \in \mathbb{R}$或者也可以等效的视为将两者相乘得到的三维向量$\hat{\omega} \theta \in \mathbb{R}^{3}$。 假设存在一个三维的矢量$p(0)$关于$\hat{\omega}$旋转$\theta$之后得到$p({\theta})$，以上假设都基于在固定坐标系中。这个旋转过程可以想象为$p(0)$为起点，在时间$t=0$到$t={\theta}$过程中以恒定速度1做旋转。我们用$p(t)$代表路径，$\dot{p}$代表速度，就可以得到如下的式子。$$\dot{p}=\hat{\omega} \times p$$上面的式子可以表示为如下的等式：$$\dot{p}=[\hat{\omega}] p$$期中初始状态为$p(0)$。由之前的线性微分方程理论的基本结果可以得到该式子的解为$$p(t)=e^{[\hat{\omega}] t} p(0)$$因为t和$\theta$是可以相互替代的，因此以上的式子也可以写成$$p(\theta)=e^{[\hat{\omega}] \theta} p(0)$$利用泰勒公式展开，并将$[\hat{\omega}]^{3}$用 $-[\hat{\omega}]$替换，将$[\hat{\omega}]^{4}$用$-[\hat{\omega}^{2}]$替换，将$[\hat{\omega}]^{5}$用$[\hat{\omega}]$替换，以此类推，可以得到以下的式子$$\begin{aligned} e^{[\hat{\omega}] \theta} &amp;=I+[\hat{\omega}] \theta+[\hat{\omega}]^{2} \frac{\theta^{2}}{2 !}+[\hat{\omega}]^{3} \frac{\theta^{3}}{3 !}+\cdots \\ &amp;=I+\left(\theta-\frac{\theta^{3}}{3 !}+\frac{\theta^{5}}{5 !}-\cdots\right)[\hat{\omega}]+\left(\frac{\theta^{2}}{2 !}-\frac{\theta^{4}}{4 !}+\frac{\theta^{6}}{6 !}-\cdots\right)[\hat{\omega}]^{2} \end{aligned}$$由泰勒展开式可知：$$\begin{aligned} \sin \theta &amp;=\theta-\frac{\theta^{3}}{3 !}+\frac{\theta^{5}}{5 !}-\cdots \\ \cos \theta &amp;=1-\frac{\theta^{2}}{2 !}+\frac{\theta^{4}}{4 !}-\cdots \end{aligned}$$因此我们便可以得到简化形式$$\operatorname{Rot}(\hat{\omega}, \theta)=e^{[\hat{\omega}] \theta}=I+\sin \theta[\hat{\omega}]+(1-\cos \theta)[\hat{\omega}]^{2} \in S O(3)$$ 三、对数旋转矩阵如果$$\hat{\omega} \theta \in \mathbb{R}^{3}$$表示旋转矩阵R中的指数坐标，那么反对称矩阵$$[\hat{\omega}]=[\hat{\omega}] \theta$$就是R的对数矩阵。对数矩阵是逆指数矩阵，]]></content>
       <tags>
         <tag>MR</tag>
       </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Hello World]]></title>
-    <url>%2F2019%2F09%2F25%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
   </entry>
   <entry>
     <title><![CDATA[工作记录]]></title>
@@ -94,10 +105,5 @@
     <title><![CDATA[使用hexo+github搭建免费个人博客]]></title>
     <url>%2F2019%2F08%2F18%2F%E4%BD%BF%E7%94%A8hexo-github%E6%90%AD%E5%BB%BA%E5%85%8D%E8%B4%B9%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%2F</url>
     <content type="text"><![CDATA[[https://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html]:]]></content>
-  </entry>
-  <entry>
-    <title><![CDATA[my-first-blog]]></title>
-    <url>%2F2019%2F08%2F18%2Fmy-first-blog%2F</url>
-    <content type="text"><![CDATA[第一次使用，请多指教]]></content>
   </entry>
 </search>

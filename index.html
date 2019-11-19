@@ -158,6 +158,171 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-gpmp" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/11/14/gpmp/">gpmp</a>
+    </h1>
+  
+
+        
+        <a href="/2019/11/14/gpmp/" class="archive-article-date">
+  	<time datetime="2019-11-14T07:17:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-14</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>高自由度的机器人在有限时间运动规划问题</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">robot</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/11/14/gpmp/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-GTSAM" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/11/14/GTSAM/">GTSAM</a>
+    </h1>
+  
+
+        
+        <a href="/2019/11/14/GTSAM/" class="archive-article-date">
+  	<time datetime="2019-11-14T02:33:01.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-14</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="一、GTSAM-PDF"><a href="#一、GTSAM-PDF" class="headerlink" title="一、GTSAM.PDF"></a>一、GTSAM.PDF</h1><h2 id="1-OdometryExample"><a href="#1-OdometryExample" class="headerlink" title="1.OdometryExample"></a>1.OdometryExample</h2><h3 id="（1）创建因子图"><a href="#（1）创建因子图" class="headerlink" title="（1）创建因子图"></a>（1）创建因子图</h3><p>①创建一个空的非线性因子图</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">NonlinearFactorGraph graph;</span><br></pre></td></tr></table></figure>
+
+<p>②在第一个点之前添加前段因子</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Pose2 priorMean(0.0, 0.0, 0.0); </span><br><span class="line">noiseModel::Diagonal::shared_ptr priorNoise = noiseModel::Diagonal::Sigmas(Vector3(0.3, 0.3, 0.1));</span><br><span class="line">graph.emplace_shared&lt;PriorFactor&lt;Pose2&gt; &gt;(1, priorMean, priorNoise);</span><br></pre></td></tr></table></figure>
+
+<p>③添加相邻两点之间添加距离因子</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Pose2 odometry(2.0, 0.0, 0.0);</span><br><span class="line">noiseModel::Diagonal::shared_ptr odometryNoise = noiseModel::Diagonal::Sigmas(Vector3(0.2, 0.2, 0.1));</span><br><span class="line">graph.emplace_shared&lt;BetweenFactor&lt;Pose2&gt; &gt;(1, 2, odometry, odometryNoise);</span><br><span class="line">graph.emplace_shared&lt;BetweenFactor&lt;Pose2&gt; &gt;(2, 3, odometry, odometryNoise);</span><br></pre></td></tr></table></figure>
+
+<h3 id="（2）GTSAM中的非线性优化过程"><a href="#（2）GTSAM中的非线性优化过程" class="headerlink" title="（2）GTSAM中的非线性优化过程"></a>（2）GTSAM中的非线性优化过程</h3><p>①创建初始估计值</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Values initial;</span><br><span class="line">initial.insert(1, Pose2(0.5, 0.0, 0.2));</span><br><span class="line">initial.insert(2, Pose2(2.3, 0.1, -0.2));</span><br><span class="line">initial.insert(3, Pose2(4.1, 0.1, 0.1));</span><br></pre></td></tr></table></figure>
+
+<p>②使用莱文贝格－马夸特方法进行优化</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Values result = LevenbergMarquardtOptimizer(graph, initial).optimize();</span><br></pre></td></tr></table></figure>
+
+<h3 id="（3）完全后验推论"><a href="#（3）完全后验推论" class="headerlink" title="（3）完全后验推论"></a>（3）完全后验推论</h3><p>计算每个点的末端协方差</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">cout.precision(2);</span><br><span class="line">  Marginals marginals(graph, result);</span><br><span class="line">  cout &lt;&lt; &quot;x1 covariance:\n&quot; &lt;&lt; marginals.marginalCovariance(1) &lt;&lt; endl;</span><br><span class="line">  cout &lt;&lt; &quot;x2 covariance:\n&quot; &lt;&lt; marginals.marginalCovariance(2) &lt;&lt; endl;</span><br><span class="line">  cout &lt;&lt; &quot;x3 covariance:\n&quot; &lt;&lt; marginals.marginalCovariance(3) &lt;&lt; endl;</span><br></pre></td></tr></table></figure>
+
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">GTSAM；c++</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/11/14/GTSAM/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-interpolator" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -180,17 +345,9 @@
       
         <h1 id="一、Python语法"><a href="#一、Python语法" class="headerlink" title="一、Python语法"></a>一、Python语法</h1><h2 id="1-Python-super（）函数"><a href="#1-Python-super（）函数" class="headerlink" title="1.Python super（）函数"></a>1.Python super（）函数</h2><p>super() 函数是用于调用父类(超类)的一个方法，用于解决多重继承问题。</p>
 <p>super 是用来解决多重继承问题的，直接用类名调用父类方法在使用单继承的时候没问题，但是如果使用多继承，会涉及到查找顺序（MRO）、重复调用（钻石继承）等种种问题。</p>
-<p>MRO 就是类的方法解析顺序表, 其实也就是继承父类方法时的顺序表。</p>
-<h2 id="2-python-property"><a href="#2-python-property" class="headerlink" title="2.python @property"></a>2.python @property</h2><p>Python内置的@property装饰器就是负责把一个方法变成属性调用的。对于类的方法，同样可以使用@property装饰器起同样的作用。</p>
-<p>例如</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">class Exam(object):</span><br><span class="line">    def __init__(self, score):</span><br><span class="line">        self._score = score</span><br><span class="line"></span><br><span class="line">    @property</span><br><span class="line">    def score(self):</span><br><span class="line">        return self._score</span><br><span class="line"></span><br><span class="line">    @score.setter</span><br><span class="line">    def score(self, val):</span><br><span class="line">        if val &lt; 0:</span><br><span class="line">            self._score = 0</span><br><span class="line">        elif val &gt; 100:</span><br><span class="line">            self._score = 100</span><br><span class="line">        else:</span><br><span class="line">            self._score = val</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt; e = Exam(60)</span><br><span class="line">&gt;&gt;&gt; e.score</span><br><span class="line">60</span><br><span class="line">&gt;&gt;&gt; e.score = 90</span><br><span class="line">&gt;&gt;&gt; e.score</span><br><span class="line">90</span><br><span class="line">&gt;&gt;&gt; e.score = 200</span><br><span class="line">&gt;&gt;&gt; e.score</span><br><span class="line">100</span><br></pre></td></tr></table></figure>
-
-<p>上面的例子中，通过给方法 score 加上了 @property，就可以把 score 当成一个属性来用，此时，又会创建一个新的装饰器 score.setter，它可以把被装饰的方法变成属性来赋值。同时，也不一定要使用 score.setter 这个装饰器，这时 score 变成一个只读属性。</p>
-<h2 id="3-python中pass语句"><a href="#3-python中pass语句" class="headerlink" title="3.python中pass语句"></a>3.python中pass语句</h2><p>Python pass 是空语句，是为了保持程序结构的完整性。pass不做任何事情，一般用做占位语句。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">def __init__(self):</span><br><span class="line">        pass</span><br></pre></td></tr></table></figure>
-
-<p>这里的pass就是占据一个位置，因为如何定义一个空函数程序会报错，没有想好函数的内容是可以用pass填充，使程序可以正常运行。</p>
-
+        
+          <a class="article-more-a" href="/2019/10/27/interpolator/#more">more >></a>
+        
       
 
       
@@ -263,11 +420,11 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="1-kinematics-duration-py→A-simple-example"><a href="#1-kinematics-duration-py→A-simple-example" class="headerlink" title="1.kinematics_duration.py→A simple example"></a>1.kinematics_duration.py→A simple example</h2><h3 id="①速度约束"><a href="#①速度约束" class="headerlink" title="①速度约束"></a>①速度约束</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">vlim_ = np.random.rand(dof) * 20</span><br><span class="line">vlim_ = np.random.rand(dof) * 20</span><br><span class="line">pc_vel = constraint.JointVelocityConstraint(vlim)#输出关节速度约束</span><br></pre></td></tr></table></figure>
+        <h1 id><a href="#" class="headerlink" title></a></h1><h3 id="1-速度约束"><a href="#1-速度约束" class="headerlink" title="1.速度约束"></a>1.速度约束</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">vlim_ = np.random.rand(dof) * 20</span><br><span class="line">vlim_ = np.random.rand(dof) * 20</span><br><span class="line">pc_vel = constraint.JointVelocityConstraint(vlim)#输出关节速度约束</span><br></pre></td></tr></table></figure>
 
-<h3 id="②加速度约束"><a href="#②加速度约束" class="headerlink" title="②加速度约束"></a>②加速度约束</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">alim_ = np.random.rand(dof) * 2</span><br><span class="line">alim = np.vstack((-alim_, alim_)).T</span><br><span class="line">pc_acc = constraint.JointAccelerationConstraint(</span><br><span class="line">        alim, discretization_scheme=constraint.DiscretizationType.Interpolation)#输出关节加速度约束</span><br></pre></td></tr></table></figure>
+<h3 id="2-加速度约束"><a href="#2-加速度约束" class="headerlink" title="2.加速度约束"></a>2.加速度约束</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">alim_ = np.random.rand(dof) * 2</span><br><span class="line">alim = np.vstack((-alim_, alim_)).T</span><br><span class="line">pc_acc = constraint.JointAccelerationConstraint(</span><br><span class="line">        alim, discretization_scheme=constraint.DiscretizationType.Interpolation)#输出关节加速度约束</span><br></pre></td></tr></table></figure>
 
-<h3 id="③计算经过100点的时候的时间以及每个点的位姿"><a href="#③计算经过100点的时候的时间以及每个点的位姿" class="headerlink" title="③计算经过100点的时候的时间以及每个点的位姿"></a>③计算经过100点的时候的时间以及每个点的位姿</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ts_sample = np.linspace(0, jnt_traj.get_duration(), 100)</span><br><span class="line">qs_sample = jnt_traj.evaldd(ts_sample)</span><br></pre></td></tr></table></figure>
+<h3 id="3-计算经过100点的时候的时间以及每个点的位姿"><a href="#3-计算经过100点的时候的时间以及每个点的位姿" class="headerlink" title="3.计算经过100点的时候的时间以及每个点的位姿"></a>3.计算经过100点的时候的时间以及每个点的位姿</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ts_sample = np.linspace(0, jnt_traj.get_duration(), 100)</span><br><span class="line">qs_sample = jnt_traj.evaldd(ts_sample)</span><br></pre></td></tr></table></figure>
 
 
       
@@ -781,157 +938,6 @@
 
 
   
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/25/hello-world/">Hello World</a>
-    </h1>
-  
-
-        
-        <a href="/2019/09/25/hello-world/" class="archive-article-date">
-  	<time datetime="2019-09-25T02:04:15.601Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-25</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/09/25/hello-world/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-工作记录" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/25/工作记录/">工作记录</a>
-    </h1>
-  
-
-        
-        <a href="/2019/09/25/工作记录/" class="archive-article-date">
-  	<time datetime="2019-09-25T02:04:15.601Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-25</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="一、《ROS机器人开发实践》"><a href="#一、《ROS机器人开发实践》" class="headerlink" title="一、《ROS机器人开发实践》"></a>一、《ROS机器人开发实践》</h1><p>学习至7.1节，完成在Gazebo环境中对于机器人的模拟仿真。</p>
-        
-          <a class="article-more-a" href="/2019/09/25/工作记录/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">工作记录</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/09/25/工作记录/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
       <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
@@ -1050,6 +1056,14 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">GTSAM；c++</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">robot</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">toppra</a>
               </li>
              
@@ -1058,11 +1072,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">latex</a>
+                <a href="javascript:void(0)" class="js-tag color3">windows</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">windows</a>
+                <a href="javascript:void(0)" class="js-tag color1">latex</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1070,11 +1084,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">工作记录</a>
+                <a href="javascript:void(0)" class="js-tag color3">MR</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">MR</a>
+                <a href="javascript:void(0)" class="js-tag color5">工作记录</a>
               </li>
              
               <li class="article-tag-list-item">
